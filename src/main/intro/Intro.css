@@ -1,0 +1,28 @@
+.intro_container {
+  width: 50%;
+  min-height: 200px;
+  display: table;
+  margin: 0 auto;
+  padding: 100px 40px;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+}
+.title {
+  margin: 0;
+}
+.subtitle {
+  margin: 0;
+}
+.explore_more_btn{
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 11px;
+  color: inherit;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.explore_me_text{
+  font-weight: 900;
+  font-family: monospace;
+}

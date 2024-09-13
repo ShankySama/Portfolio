@@ -1,0 +1,31 @@
+.footer_container {
+  z-index: 2;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  column-gap: 80px;
+  justify-content: center;
+  gap: 40px;
+}
+.card_link {
+  text-decoration: none;
+  color: inherit;
+}
+.card {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  min-width: 140px;
+  justify-content: center;
+  transition: 0.5s;
+  backdrop-filter: blur(20px);
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.type {
+  margin-left: 8px;
+}

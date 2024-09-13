@@ -1,0 +1,49 @@
+body {
+  background-color: #daf7a6;
+  color: #424242;
+  margin: 0;
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.dark_mode {
+  background-color: #212121;
+  color: #d7d7d7;
+}
+.dark_mode .light_mode_img {
+  display: none;
+}
+.light_mode_img {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
+}
+.loading_container {
+  -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  text-align: center;
+}
+.loading_container span {
+  display: inline-block;
+  font-size: 20px;
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}

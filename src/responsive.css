@@ -1,0 +1,15 @@
+/* Phone */
+@media (max-width: 760px) {
+  .header_container,
+  .logo_container {
+    display: block !important;
+    text-align: center;
+  }
+  .intro_container {
+    width: auto !important;
+    padding-top: 10px !important;
+  }
+  .footer_container {
+    grid-template-columns: 0.7fr !important;
+  }
+}

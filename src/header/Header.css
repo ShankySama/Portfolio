@@ -1,0 +1,28 @@
+.header_container {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(30px);
+  transition: 1s;
+}
+.logo_container {
+  display: flex;
+  align-items: center;
+}
+.title_container {
+  padding-left: 10px;
+}
+.title {
+  margin: 0;
+}
+.sub_title {
+  margin: 0;
+}
+.mode_btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
