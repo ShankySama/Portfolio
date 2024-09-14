@@ -6,12 +6,13 @@ import { Loading } from "../../components";
 import ExploreMe from "./ExploreMe";
 import "./Intro.css";
 
-const Intro = ({ data }) => {
+const Intro = ({ data, changeSection }) => {
   const [loader, setLoader] = useState(false);
 
   const handleExploreMeClick = () => {
     setLoader(true);
     setTimeout(() => {
+      changeSection("cardsSection")
       setLoader(false);
     }, [3000]);
   };

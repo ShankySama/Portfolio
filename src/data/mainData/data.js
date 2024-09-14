@@ -13,8 +13,8 @@ export const mainData = {
         avatar: {
           src: "/images/skills_avatar.png",
           alt: "skills_avatar-logo",
-          height: 200,
-          width: 200,
+          height: 150,
+          width: 150,
         },
       },
       {
@@ -22,8 +22,8 @@ export const mainData = {
         avatar: {
           src: "/images/projects_avatar.png",
           alt: "projects_avatar-logo",
-          height: 200,
-          width: 200,
+          height: 150,
+          width: 150,
         },
       },
       {
@@ -31,8 +31,8 @@ export const mainData = {
         avatar: {
           src: "/images/experience_avatar.png",
           alt: "experience_avatar-logo",
-          height: 170,
-          width: 170,
+          height: 150,
+          width: 150,
         },
       },
       {
@@ -40,8 +40,8 @@ export const mainData = {
         avatar: {
           src: "/images/intrest_avatar.png",
           alt: "intrest_avatar-logo",
-          height: 170,
-          width: 170,
+          height: 150,
+          width: 150,
         },
       },
     ],
