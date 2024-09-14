@@ -1,9 +1,10 @@
 import React from "react";
+import src from "../assets/images/avatar.png";
 
 const Avatar = ({ logo }) => {
   return (
     <div>
-      <img {...logo} alt={logo.alt} />
+      <img src={src} {...logo} alt={logo.alt} />
     </div>
   );
 };

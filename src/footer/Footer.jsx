@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer_container">
       {footerData.profiles.map((profile, index) => (
-        <Card profile={profile} key={index} />
+        <Card profile={profile} key={index} index={index}/>
       ))}
     </div>
   );

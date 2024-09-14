@@ -4,6 +4,7 @@ import Title from "./Title";
 import Subtitle from "./Subtitle";
 import DarkModeBtn from "./DarkModeBtn";
 import { headerData } from "../data";
+
 import "./Header.css";
 
 const Header = () => {
@@ -22,7 +23,6 @@ const Header = () => {
         <DarkModeBtn
           darkModeImg={headerData.mode.darkMode}
           lightModeImg={headerData.mode.lightMode}
-          switchClick={headerData.audio.switchOn}
         />
       </div>
     </div>

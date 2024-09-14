@@ -11,7 +11,7 @@ export const mainData = {
       {
         title: "Skills",
         avatar: {
-          src: "/images/skills_avatar.png",
+          name:"skills_avatar.png",
           alt: "skills_avatar-logo",
           height: 150,
           width: 150,
@@ -20,7 +20,7 @@ export const mainData = {
       {
         title: "Projects",
         avatar: {
-          src: "/images/projects_avatar.png",
+          name:"projects_avatar.png",
           alt: "projects_avatar-logo",
           height: 150,
           width: 150,
@@ -29,7 +29,7 @@ export const mainData = {
       {
         title: "Experience",
         avatar: {
-          src: "/images/experience_avatar.png",
+          name:"experience_avatar.png",
           alt: "experience_avatar-logo",
           height: 150,
           width: 150,
@@ -38,8 +38,8 @@ export const mainData = {
       {
         title: "Interests",
         avatar: {
-          src: "/images/intrest_avatar.png",
-          alt: "intrest_avatar-logo",
+          name:"interest_avatar.png",
+          alt: "interest_avatar-logo",
           height: 150,
           width: 150,
         },
