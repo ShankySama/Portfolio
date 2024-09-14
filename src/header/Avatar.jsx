@@ -1,10 +1,11 @@
 import React from "react";
 import src from "../assets/images/avatar.png";
 
-const Avatar = ({ logo }) => {
+const Avatar = ({ logo, greeting }) => {
   return (
-    <div>
-      <img src={src} {...logo} alt={logo.alt} />
+    <div className="header_avatar_container">
+      <img className="header_avatar" src={src} {...logo} alt={logo.alt} />
+      <span className="greeting">{greeting}</span>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const Header = () => {
     <div className="header_container">
       <div className="logo_container">
         <div className="avatar_container">
-          <Avatar logo={headerData.logo} />
+          <Avatar logo={headerData.logo} greeting={headerData.greeting}/>
         </div>
         <div className="title_container">
           <Title title={headerData.title} />

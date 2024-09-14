@@ -4,6 +4,7 @@ export const headerData = {
     height: 100,
     width: 100,
   },
+  greeting:"Hi, How are you ?",
   title: "Pardeep Singh Rawat",
   subTitle: "Frontend Developer",
   mode: {

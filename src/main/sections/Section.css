@@ -58,3 +58,6 @@
 .avatar_container {
   text-align: center;
 }
+.avatar_container img {
+  transition: all 1s ease;
+}

@@ -5,9 +5,18 @@
     display: block !important;
     text-align: center;
   }
+  .header_avatar_container{
+    display: block !important;
+  }
+  .header_avatar_container span{
+    display: none;
+  }
   .intro_container {
+    display: grid !important;
     width: auto !important;
     padding-top: 10px !important;
+    justify-content: center;
+    align-items: center;
   }
   .footer_container {
     grid-template-columns: 0.7fr !important;
@@ -41,6 +50,12 @@
   .logo_container {
     display: block !important;
     text-align: center;
+  }
+  .header_avatar_container{
+    display: block !important;
+  }
+  .header_avatar_container span{
+    display: none;
   }
   .intro_container {
     width: 70% !important;
