@@ -1,5 +1,5 @@
 /* Phone */
-@media (max-width: 760px) {
+@media (max-width: 480px) {
   .header_container,
   .logo_container {
     display: block !important;
@@ -8,6 +8,26 @@
   .intro_container {
     width: auto !important;
     padding-top: 10px !important;
+  }
+  .footer_container {
+    grid-template-columns: 0.7fr !important;
+  }
+  .cards_section{
+    grid-template-columns: 1fr !important;
+  }
+}
+/* Tablets */
+@media (min-width:481px) and (max-width:1023px){
+  .header_container,
+  .logo_container {
+    display: block !important;
+    text-align: center;
+  }
+  .intro_container{
+    width: 70% !important;
+  }
+  .cards_section{
+    grid-template-columns: 1fr 1fr !important;
   }
   .footer_container {
     grid-template-columns: 0.7fr !important;

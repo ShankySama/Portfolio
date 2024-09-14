@@ -10,13 +10,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.dark_mode {
-  background-color: #212121;
-  color: #d7d7d7;
-}
-.dark_mode .light_mode_img {
-  display: none;
-}
 .light_mode_img {
   width: 100%;
   height: 100vh;
@@ -46,4 +39,21 @@ code {
   100% {
     transform: translateY(0px);
   }
+}
+/* Dark Mode Css */
+.dark_mode {
+  background-color: #212121;
+  color: #d7d7d7;
+}
+.dark_mode .light_mode_img {
+  display: none;
+}
+.dark_mode .explore_more_btn{
+  border-color: #424242;
+}
+.dark_mode .section_card{
+  border-color: #424242;
+}
+.dark_mode .card{
+  border-color: #424242;
 }

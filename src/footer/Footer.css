@@ -14,7 +14,7 @@
 .card {
   cursor: pointer;
   padding: 10px;
-  border: 2px solid black;
+  border: 2px solid #ffffff91;
   border-radius: 11px;
   display: flex;
   align-items: center;
