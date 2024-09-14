@@ -30,7 +30,6 @@
   &:hover {
     align-items: start;
     backdrop-filter: none;
-    padding-top: 0;
     transform: scale(1.2);
     .section_cards_title {
       display: none;

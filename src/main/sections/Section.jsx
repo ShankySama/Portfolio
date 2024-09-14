@@ -7,7 +7,7 @@ const Section = ({ data }) => {
     <div className="section">
       <div className="cards_section">
         {data.cards.map((card, index) => (
-          <SectionCard card={card} key={index} />
+          <SectionCard card={card} key={index} className={`card_${index+1}`}/>
         ))}
       </div>
     </div>

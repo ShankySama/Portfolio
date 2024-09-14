@@ -3,10 +3,10 @@ import CardTitle from "./CardTitle";
 import Avatar from "./Avatar";
 import CardDescription from "./CardDescription";
 
-const SectionCard = ({ card }) => {
+const SectionCard = ({ card,className }) => {
   return (
     <div
-      className="section_card"
+      className={`section_card ${className}`}
     >
       <CardTitle title={card.title} />
       <Avatar avatar={card.avatar} />
