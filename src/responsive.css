@@ -31,11 +31,13 @@
   }
   .section_card {
     &:hover {
-      align-items: center !important;
       transform: none !important;
       .section_cards_title {
         display: flex !important;
       }
+    }
+    .avatar_container {
+      align-self: start !important;
     }
     .avatar_container img {
       height: 100px;
@@ -80,11 +82,13 @@
   }
   .section_card {
     &:hover {
-      align-items: center !important;
       transform: none !important;
       .section_cards_title {
         display: flex !important;
       }
+    }
+    .avatar_container {
+      align-self: start !important;
     }
     .avatar_container img {
       height: 100px;

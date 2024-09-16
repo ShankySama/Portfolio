@@ -11,38 +11,46 @@ export const mainData = {
       {
         title: "Skills",
         avatar: {
-          name:"skills_avatar.png",
+          name: "skills_avatar.png",
           alt: "skills_avatar-logo",
           height: 150,
           width: 150,
         },
+        description:
+          "Experienced in HTML5, CSS3, JavaScript, and TypeScript, I specialize in ReactJS, NextJS for building dynamic web applications.",
       },
       {
         title: "Projects",
         avatar: {
-          name:"projects_avatar.png",
+          name: "projects_avatar.png",
           alt: "projects_avatar-logo",
           height: 150,
           width: 150,
         },
+        description:
+          "Led and contributed to diverse web development projects, utilizing modern frameworks like ReactJS and NextJS for building responsive, high-performance applications.",
       },
       {
         title: "Experience",
         avatar: {
-          name:"experience_avatar.png",
+          name: "experience_avatar.png",
           alt: "experience_avatar-logo",
           height: 150,
           width: 150,
         },
+        description:
+          "I have accumulated extensive experience working in web development roles, where I contributed to building and maintaining large-scale applications.",
       },
       {
         title: "Interests",
         avatar: {
-          name:"interest_avatar.png",
+          name: "interest_avatar.png",
           alt: "interest_avatar-logo",
           height: 150,
           width: 150,
         },
+        description:
+          "Passionate about traveling, reading manga, watching anime, and playing metal guitar. These interests keep me inspired and balanced.",
       },
     ],
   },

@@ -1,8 +1,7 @@
 .section {
   padding: 40px;
-  transition:  opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
-
 .cards_section {
   display: grid;
   justify-content: center;
@@ -11,16 +10,14 @@
   grid-template-rows: 1fr;
   gap: 50px;
   padding: 0 20px;
-  transition:  opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
-
 .section_card {
   min-height: 200px;
   border-radius: 11px;
   padding: 15px;
   backdrop-filter: blur(10px);
   display: grid;
-  align-items: center;
   justify-content: center;
   border: 2px solid #ffffff91;
   cursor: pointer;
@@ -29,13 +26,12 @@
   position: relative;
   overflow: hidden;
   &:hover {
-    align-items: start;
     backdrop-filter: none;
     transform: scale(1.1);
     .section_cards_title {
       display: none;
     }
-    .avatar_container{
+    .avatar_container {
       align-self: center;
     }
     img {
@@ -43,9 +39,9 @@
       width: 100px !important;
       transition: height 1s ease, width 1s ease;
     }
+
   }
 }
-
 .section_cards_title {
   transition: opacity 1s;
   display: flex;
@@ -54,10 +50,23 @@
     margin: 0;
   }
 }
-
 .avatar_container {
   text-align: center;
 }
 .avatar_container img {
   transition: all 1s ease;
+}
+.card_explore_more_container {
+  text-align: center;
+}
+.explore_all_btn {
+  border: none;
+  border-radius: 11px;
+  background-color: #ffffff91;
+  cursor: pointer;
+  p{
+    padding:10px;
+    margin:0;
+    font-weight: 800;
+  }
 }
