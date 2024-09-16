@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-p{
+p {
   font-family: monospace;
 }
 code {
@@ -47,16 +47,19 @@ code {
 .dark_mode {
   background-color: #212121;
   color: #d7d7d7;
+  .explore_all_btn {
+    color: #424242;
+  }
 }
 .dark_mode .light_mode_img {
   display: none;
 }
-.dark_mode .explore_more_btn{
+.dark_mode .explore_more_btn {
   border-color: #424242;
 }
-.dark_mode .section_card{
+.dark_mode .section_card {
   border-color: #424242;
 }
-.dark_mode .card{
+.dark_mode .card {
   border-color: #424242;
 }
