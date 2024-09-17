@@ -28,15 +28,9 @@
   &:hover {
     backdrop-filter: none;
     transform: scale(1.1);
-    .section_cards_title {
-      display: none;
-    }
-    .avatar_container {
-      align-self: center;
-    }
     img {
-      height: 100px !important;
-      width: 100px !important;
+      height: 150px ;
+      width: 150px ;
       transition: height 1s ease, width 1s ease;
     }
 

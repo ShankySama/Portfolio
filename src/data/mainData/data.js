@@ -13,8 +13,8 @@ export const mainData = {
         avatar: {
           name: "skills_avatar.png",
           alt: "skills_avatar-logo",
-          height: 150,
-          width: 150,
+          height: 120,
+          width: 120,
         },
         description:
           "Experienced in HTML5, CSS3, JavaScript, and TypeScript, I specialize in ReactJS, NextJS for building dynamic web applications.",
@@ -24,8 +24,8 @@ export const mainData = {
         avatar: {
           name: "projects_avatar.png",
           alt: "projects_avatar-logo",
-          height: 150,
-          width: 150,
+          height: 120,
+          width: 120,
         },
         description:
           "Led and contributed to diverse web development projects, utilizing modern frameworks like ReactJS and NextJS for building responsive, high-performance applications.",
@@ -35,8 +35,8 @@ export const mainData = {
         avatar: {
           name: "experience_avatar.png",
           alt: "experience_avatar-logo",
-          height: 150,
-          width: 150,
+          height: 120,
+          width: 120,
         },
         description:
           "I have accumulated extensive experience working in web development roles, where I contributed to building and maintaining large-scale applications.",
@@ -46,8 +46,8 @@ export const mainData = {
         avatar: {
           name: "interest_avatar.png",
           alt: "interest_avatar-logo",
-          height: 150,
-          width: 150,
+          height: 120,
+          width: 120,
         },
         description:
           "Passionate about traveling, reading manga, watching anime, and playing metal guitar. These interests keep me inspired and balanced.",

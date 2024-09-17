@@ -1,5 +1,8 @@
 /* Phone */
 @media (max-width: 480px) {
+  .header_container{
+    margin-bottom: 0 !important;
+  }
   .header_container,
   .logo_container {
     display: block !important;
@@ -17,8 +20,13 @@
     padding-top: 10px !important;
     justify-content: center;
     align-items: center;
+    padding-top: 10px !important;
+  }
+  .main_container{
+    margin-bottom:0 !important;
   }
   .footer_container {
+    backdrop-filter: blur(30px);
     grid-template-columns: 0.7fr !important;
     .card {
       &:hover {
@@ -36,8 +44,9 @@
         display: flex !important;
       }
     }
-    .avatar_container {
-      align-self: start !important;
+    img{
+      height: 100px !important;
+      width: 100px !important;
     }
     .avatar_container img {
       height: 100px;
@@ -86,13 +95,10 @@
       .section_cards_title {
         display: flex !important;
       }
-    }
-    .avatar_container {
-      align-self: start !important;
-    }
-    .avatar_container img {
-      height: 100px;
-      width: 100px;
+      img{
+        height: 120px !important;
+        width: 120px !important;
+      }
     }
   }
   .footer_container {
