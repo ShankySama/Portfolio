@@ -2,7 +2,7 @@ import React from "react";
 import SectionCard from "./SectionCard";
 import "./Section.css";
 
-const Section = ({ data }) => {
+const Section = ({ data,handleExploreAllClick }) => {
   return (
     <div className="section">
       <div className="cards_section">
@@ -12,6 +12,7 @@ const Section = ({ data }) => {
             card={card}
             key={index}
             className={`card_${index + 1}`}
+            handleExploreAllClick={handleExploreAllClick}
           />
         ))}
       </div>

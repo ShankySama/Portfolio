@@ -9,6 +9,10 @@ const Main = () => {
   const [showSection, setShowSection] = useState({
     introSection: true,
     cardsSection: false,
+    skillSection: false,
+    projectSection: false,
+    experienceSection: false,
+    interestSection: false,
   });
   const [loader, setLoader] = useState(false);
 
@@ -31,6 +35,14 @@ const Main = () => {
     }, [3000]);
   };
 
+  const handleExploreAllClick = (explore) => {
+    setLoader(true);
+    setTimeout(() => {
+      changeSection(explore);
+      setLoader(false);
+    }, 2000);
+  };
+
   return (
     <div className="main_container">
       {loader ? (
@@ -45,7 +57,10 @@ const Main = () => {
             />
           )}
           {showSection.cardsSection && (
-            <Section data={mainData.section} changeSection={changeSection} />
+            <Section
+              data={mainData.section}
+              handleExploreAllClick={handleExploreAllClick}
+            />
           )}
         </>
       )}

@@ -8,4 +8,4 @@ const CardDescription = ({ description }) => {
   );
 };
 
-export default CardDescription;
+export default React.memo(CardDescription);

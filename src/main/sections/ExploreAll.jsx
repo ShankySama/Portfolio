@@ -1,11 +1,16 @@
 import React from "react";
 
-const ExploreAll = ({explore}) => {
+const ExploreAll = ({ explore, handleExploreAllClick }) => {
   return (
     <div className="card_explore_more_container">
-      <button className="explore_all_btn"><p>Explore All {explore}</p></button>
+      <button
+        className="explore_all_btn"
+        onClick={()=>handleExploreAllClick(explore)}
+      >
+        <p>Explore All {explore}</p>
+      </button>
     </div>
   );
 };
 
-export default ExploreAll;
+export default React.memo(ExploreAll);

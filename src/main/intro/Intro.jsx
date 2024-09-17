@@ -5,7 +5,7 @@ import Description from "./Description";
 import ExploreMe from "./ExploreMe";
 import "./Intro.css";
 
-const Intro = ({ data, changeSection, handleExploreMeClick }) => {
+const Intro = ({ data, handleExploreMeClick }) => {
   return (
     <div className="intro_container">
       <Title title={data.title} />
