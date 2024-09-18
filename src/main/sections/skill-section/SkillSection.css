@@ -1,0 +1,16 @@
+.skill_section {
+  padding: 0px 40px;
+}
+.skill_icon_container {
+  display: grid;
+  justify-content: start;
+}
+.skill_icon {
+  text-align: center;
+  background:#ffffff91;
+  padding: 8px;
+  border-radius: 11px;
+}
+.skill_name {
+  margin: 0;
+}

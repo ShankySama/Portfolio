@@ -29,11 +29,10 @@
     backdrop-filter: none;
     transform: scale(1.1);
     img {
-      height: 150px ;
-      width: 150px ;
+      height: 150px;
+      width: 150px;
       transition: height 1s ease, width 1s ease;
     }
-
   }
 }
 .section_cards_title {
@@ -59,9 +58,9 @@
   background-color: #ffffff91;
   cursor: pointer;
   color: #424242;
-  p{
-    padding:10px;
-    margin:0;
+  p {
+    padding: 10px;
+    margin: 0;
     font-weight: 800;
   }
 }

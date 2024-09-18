@@ -1,11 +1,10 @@
 import React from "react";
 
-const ExploreAll = ({ explore, handleExploreAllClick }) => {
+const ExploreAll = ({ explore }) => {
   return (
     <div className="card_explore_more_container">
       <button
         className="explore_all_btn"
-        onClick={()=>handleExploreAllClick(explore.toLowerCase())}
       >
         <p>Explore All {explore}</p>
       </button>
