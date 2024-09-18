@@ -5,7 +5,7 @@ const ExploreAll = ({ explore, handleExploreAllClick }) => {
     <div className="card_explore_more_container">
       <button
         className="explore_all_btn"
-        onClick={()=>handleExploreAllClick(explore)}
+        onClick={()=>handleExploreAllClick(explore.toLowerCase())}
       >
         <p>Explore All {explore}</p>
       </button>
