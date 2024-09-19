@@ -26,7 +26,7 @@
     margin-bottom:0 !important;
   }
   .footer_container {
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     grid-template-columns: 0.7fr !important;
     .card {
       &:hover {

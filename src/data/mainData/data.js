@@ -1,3 +1,17 @@
+import react_icon from "../../assets/images/react_icon.png";
+import next_icon from "../../assets/images/next_icon.png";
+import node_icon from "../../assets/images/node_icon.png";
+import redux_icon from "../../assets/images/redux_icon.png";
+import redux_toolkit_icon from "../../assets/images/redux_toolkit_icon.png";
+import js_icon from "../../assets/images/js_icon.png";
+import ts_icon from "../../assets/images/ts_icon.png";
+import html_icon from "../../assets/images/html_icon.png";
+import css_icon from "../../assets/images/css_icon.png";
+import sass_icon from "../../assets/images/sass_icon.png";
+import bootstrap_icon from "../../assets/images/bootstrap_icon.png";
+import tailwind_icon from "../../assets/images/tailwind_icon.png";
+import mui_icon from "../../assets/images/mui_icon.png";
+
 export const mainData = {
   intro: {
     title: "Hello, I'm a Front-End Developer!",
@@ -60,19 +74,19 @@ export const mainData = {
       {
         title: "Web Technologies",
         skills: [
-          "React JS",
-          "Next JS",
-          "Node JS",
-          "Redux",
-          "Redux-toolkit",
-          "JavaScript",
-          "TypeScript",
-          "HTML5",
-          "CSS3",
-          "SCSS",
-          "Bootstrap",
-          "Tailwind",
-          "MUI",
+          { name: "React JS", icon: react_icon },
+          { name: "Next JS", icon: next_icon },
+          { name: "Node JS", icon: node_icon },
+          { name: "Redux", icon: redux_icon },
+          { name: "Redux-toolkit", icon: redux_toolkit_icon },
+          { name: "JavaScript", icon: js_icon },
+          { name: "TypeScript", icon: ts_icon },
+          { name: "HTML5", icon: html_icon },
+          { name: "CSS3", icon: css_icon },
+          { name: "SASS", icon: sass_icon },
+          { name: "Bootstrap", icon: bootstrap_icon },
+          { name: "Tailwind", icon: tailwind_icon },
+          { name: "MUI", icon: mui_icon },
         ],
       },
       {

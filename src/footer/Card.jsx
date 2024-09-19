@@ -1,10 +1,6 @@
 import React from "react";
-import gmail_icon from "../assets/images/gmail_icon.png";
-import linkedin_icon from "../assets/images/linkedin_icon.png";
-import leetCode_icon from "../assets/images/leetcode_icon.png";
 
-const Card = ({ profile, index }) => {
-  const icons = [gmail_icon, linkedin_icon, leetCode_icon];
+const Card = ({ profile }) => {
   let anchorAttributes = {};
   if (profile.type === "Gmail") {
     anchorAttributes = { href: "mailTo:" + profile.value };
@@ -19,7 +15,12 @@ const Card = ({ profile, index }) => {
     <a className="card_link" {...anchorAttributes}>
       <div className="card">
         <div>
-          <img src={icons[index]} {...profile?.icon} alt={profile?.alt} />
+          <img
+            src={profile?.icon}
+            alt={profile?.alt}
+            height={profile.size}
+            width={profile.size}
+          />
         </div>
         <div>
           <h3 className="type">{profile?.type}</h3>
