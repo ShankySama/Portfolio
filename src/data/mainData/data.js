@@ -54,4 +54,59 @@ export const mainData = {
       },
     ],
   },
+  skillSection: {
+    title: "Skills",
+    sections: [
+      {
+        title: "Web Technologies",
+        skills: [
+          "React JS",
+          "Next JS",
+          "Node JS",
+          "Redux",
+          "Redux-toolkit",
+          "JavaScript",
+          "TypeScript",
+          "HTML5",
+          "CSS3",
+          "SCSS",
+          "Bootstrap",
+          "Tailwind",
+          "MUI",
+        ],
+      },
+      {
+        title: "Coding Tools",
+        skills: [],
+      },
+      {
+        title: "Database",
+        skills: [],
+      },
+      {
+        title: "API Tools",
+        skills: [],
+      },
+      {
+        title: "Testing Library",
+        skills: [],
+      },
+      {
+        title: "UI Tools",
+        skills: [],
+      },
+      {
+        title: "CMS",
+        skills: [],
+      },
+      {
+        title: "Source Code Management",
+        skills: [],
+      },
+      {
+        title: "Team Cordination & Task Management",
+        skills: [],
+      },
+    ],
+  },
 };

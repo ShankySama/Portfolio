@@ -46,7 +46,6 @@ const Main = () => {
       setLoader(false);
     }, 2000);
   };
-  console.log(showSection)
   return (
     <div className="main_container">
       {loader ? (
@@ -66,7 +65,7 @@ const Main = () => {
               handleExploreAllClick={handleExploreAllClick}
             />
           )}
-          {showSection.skills && <SkillSection />}
+          {showSection.skills && <SkillSection data={mainData.skillSection}/>}
           {showSection.projects && <ProjectSection />}
           {showSection.experience && <ExperienceSection />}
           {showSection.interests && <InterestSection />}
