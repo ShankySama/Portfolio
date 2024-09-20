@@ -1,18 +1,16 @@
 .header_container {
-  display: grid;
-  grid-template-columns: 1.5fr .1fr;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-  backdrop-filter: blur(90px);
+  display: flex;
+  backdrop-filter: blur(20px);
   transition: 1s;
   margin-bottom: 1rem;
   position: fixed;
-  width: 100%;
   z-index: 99;
   top: 0;
   padding:10px 20px;
+  width: 100vw;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
 }
 .logo_container {
   display: flex;
