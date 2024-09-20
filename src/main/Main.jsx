@@ -30,22 +30,29 @@ const Main = () => {
       return newState;
     });
   };
-
   const handleExploreMeClick = () => {
     setLoader(true);
     setTimeout(() => {
       changeSection("all");
       setLoader(false);
-    }, [3000]);
+    }, [1500]);
   };
-
   const handleExploreAllClick = (explore) => {
     setLoader(true);
     setTimeout(() => {
       changeSection(explore);
       setLoader(false);
-    }, 2000);
+    }, 1500);
   };
+
+  const handleGoBack = (backTo) => {
+    setLoader(true);
+    setTimeout(() => {
+      changeSection(backTo);
+      setLoader(false);
+    }, [1500]);
+  };
+
   return (
     <div className="main_container">
       {loader ? (
@@ -65,7 +72,7 @@ const Main = () => {
               handleExploreAllClick={handleExploreAllClick}
             />
           )}
-          {showSection.skills && <SkillSection data={mainData.skillSection}/>}
+          {showSection.skills && <SkillSection data={mainData.skillSection} handleGoBack={handleGoBack}/>}
           {showSection.projects && <ProjectSection />}
           {showSection.experience && <ExperienceSection />}
           {showSection.interests && <InterestSection />}

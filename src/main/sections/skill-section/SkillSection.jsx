@@ -3,12 +3,12 @@ import "./SkillSection.css";
 import Title from "./Title";
 import SkillContainer from "./SkillContainer";
 
-const SkillSection = ({ data }) => {
+const SkillSection = ({ data,handleGoBack }) => {
   return (
     <div className="skill_section">
-      <Title title={data.title} />
+      <Title title={data.title} handleGoBack={handleGoBack}/>
       {data.sections.map((skills, index) => (
-        <SkillContainer data={skills} key={index}/>
+        <SkillContainer data={skills} key={index} />
       ))}
     </div>
   );

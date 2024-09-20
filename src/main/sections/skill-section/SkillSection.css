@@ -1,8 +1,24 @@
 .skill_section {
   padding: 0px 40px;
 }
-.skill_container{
+.skill_container {
   margin-bottom: 3rem;
+}
+.skill_title_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.go_back{
+  border-radius: 11px;
+  background: #ffffff91;
+  border: none;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+.go_back_text{
+  margin: 0;
 }
 .skill_icon_container {
   display: grid;
@@ -11,7 +27,7 @@
 }
 .skill_icon {
   text-align: center;
-  background:#ffffff91;
+  background: #ffffff91;
   padding: 8px;
   border-radius: 11px;
 }
