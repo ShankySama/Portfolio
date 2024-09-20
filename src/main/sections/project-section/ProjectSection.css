@@ -1,0 +1,55 @@
+.project_link {
+  text-decoration: none;
+  color: inherit;
+}
+.project_section {
+  padding: 0px 40px;
+}
+.project_card {
+  border: 2px solid #ffffff91;
+  border-radius: 11px;
+  padding: 10px;
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  transition: all 1s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+.project_card_body {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  gap: 20px;
+}
+.project_title {
+  margin-top: 0;
+}
+.project_tech_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.myrole_section {
+  padding: 5px;
+  background-color: #ffffff91;
+  border-radius: 11px;
+}
+.technology_section {
+  padding: 5px;
+  background-color: #ffffff91;
+  border-radius: 11px;
+}
+.team_section {
+  padding: 5px;
+  background-color: #ffffff91;
+  border-radius: 11px;
+}
+.subHeading {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.item {
+  text-align: center;
+  list-style-type: none;
+}

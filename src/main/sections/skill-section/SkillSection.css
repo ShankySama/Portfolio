@@ -9,17 +9,6 @@
   align-items: center;
   gap: 15px;
 }
-.go_back{
-  border-radius: 11px;
-  background: #ffffff91;
-  border: none;
-  height: 40px;
-  padding: 10px;
-  cursor: pointer;
-}
-.go_back_text{
-  margin: 0;
-}
 .skill_icon_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
