@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillContainer = ({ data }) => {
   return (
-    <div>
+    <div className="skill_container">
       <h2>{data.title}</h2>
       <div className="skill_icon_container">
         {data.skills.map((skill, index) => (

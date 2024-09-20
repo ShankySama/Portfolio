@@ -1,6 +1,9 @@
 .skill_section {
   padding: 0px 40px;
 }
+.skill_container{
+  margin-bottom: 3rem;
+}
 .skill_icon_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));

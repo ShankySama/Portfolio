@@ -4,7 +4,6 @@
   display: table;
   margin: 0 auto;
   padding: 100px 40px;
-  backdrop-filter: blur(30px);
   border-radius: 15px;
 }
 .title {

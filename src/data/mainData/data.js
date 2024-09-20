@@ -11,6 +11,26 @@ import sass_icon from "../../assets/images/sass_icon.png";
 import bootstrap_icon from "../../assets/images/bootstrap_icon.png";
 import tailwind_icon from "../../assets/images/tailwind_icon.png";
 import mui_icon from "../../assets/images/mui_icon.png";
+import vscode_icon from "../../assets/images/vscode_icon.png";
+import copilot_icon from "../../assets/images/copilot_icon.png";
+import chatgpt_icon from "../../assets/images/chatgpt_icon.png";
+import mongodb_icon from "../../assets/images/mongodb_icon.png";
+import mysql_icon from "../../assets/images/mysql_icon.png";
+import postman_icon from "../../assets/images/postman_icon.png";
+import insomnia_icon from "../../assets/images/insomnia_icon.png";
+import swagger_icon from "../../assets/images/swagger_icon.png";
+import jest_icon from "../../assets/images/jest_icon.png";
+import figma_icon from "../../assets/images/figma_icon.png";
+import react_devtool_icon from "../../assets/images/react_devtools_icon.png";
+import adobe_photoshop_icon from "../../assets/images/adobe_photoshop_icon.png";
+import sitecore_icon from "../../assets/images/sitecore_icon.png";
+import wordpress_icon from "../../assets/images/wordpress_icon.png";
+import github_icon from "../../assets/images/github_icon.png";
+import bitbucket_icon from "../../assets/images/bitbucket_icon.png";
+import jira_icon from "../../assets/images/jira_icon.png";
+import trello_icon from "../../assets/images/trello_icon.png";
+import slack_icon from "../../assets/images/slack_icon.png";
+import msteams_icon from "../../assets/images/msteams_icon.png";
 
 export const mainData = {
   intro: {
@@ -91,35 +111,70 @@ export const mainData = {
       },
       {
         title: "Coding Tools",
-        skills: [],
+        skills: [
+          {
+            name: "VS Code",
+            icon: vscode_icon,
+          },
+          {
+            name: "Copilot",
+            icon: copilot_icon,
+          },
+          {
+            name: "ChatGPT",
+            icon: chatgpt_icon,
+          },
+        ],
       },
       {
         title: "Database",
-        skills: [],
+        skills: [
+          { name: "MongoDB", icon: mongodb_icon },
+          { name: "MySQL", icon: mysql_icon },
+        ],
       },
       {
         title: "API Tools",
-        skills: [],
+        skills: [
+          { name: "Postman", icon: postman_icon },
+          { name: "Insomnia", icon: insomnia_icon },
+          { name: "Swagger", icon: swagger_icon },
+        ],
       },
       {
         title: "Testing Library",
-        skills: [],
+        skills: [{ name: "Jest", icon: jest_icon }],
       },
       {
         title: "UI Tools",
-        skills: [],
+        skills: [
+          { name: "Figma", icon: figma_icon },
+          { name: "React Dev Tools", icon: react_devtool_icon },
+          { name: "Adobe Photoshop", icon: adobe_photoshop_icon },
+        ],
       },
       {
         title: "CMS",
-        skills: [],
+        skills: [
+          { name: "Sitecore", icon: sitecore_icon },
+          { name: "Wordpress", icon: wordpress_icon },
+        ],
       },
       {
         title: "Source Code Management",
-        skills: [],
+        skills: [
+          { name: "Github", icon: github_icon },
+          { name: "Bitbucket", icon: bitbucket_icon },
+        ],
       },
       {
         title: "Team Cordination & Task Management",
-        skills: [],
+        skills: [
+          { name: "Jira", icon: jira_icon },
+          { name: "Slack", icon: slack_icon },
+          { name: "Trello", icon: trello_icon },
+          { name: "MS-Teams", icon: msteams_icon },
+        ],
       },
     ],
   },

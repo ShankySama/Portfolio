@@ -8,7 +8,7 @@ const SkillSection = ({ data }) => {
     <div className="skill_section">
       <Title title={data.title} />
       {data.sections.map((skills, index) => (
-        <SkillContainer data={skills} />
+        <SkillContainer data={skills} key={index}/>
       ))}
     </div>
   );

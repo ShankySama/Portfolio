@@ -14,19 +14,21 @@
   .header_avatar_container span{
     display: none;
   }
+  .main_container{
+    margin-top: 200px !important;
+  }
   .intro_container {
     display: grid !important;
     width: auto !important;
-    padding-top: 10px !important;
     justify-content: center;
     align-items: center;
-    padding-top: 10px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
   }
   .main_container{
     margin-bottom:0 !important;
   }
   .footer_container {
-    backdrop-filter: blur(30px);
     grid-template-columns: 0.7fr !important;
     .card {
       &:hover {
@@ -53,6 +55,9 @@
       width: 100px;
     }
   }
+  .explore_more_btn{
+    width: 100%;
+  }
 }
 
 /* Tablets */
@@ -67,6 +72,9 @@
   }
   .header_avatar_container span{
     display: none;
+  }
+  .main_container{
+    margin-top: 200px !important;
   }
   .intro_container {
     width: 70% !important;
