@@ -1,12 +1,12 @@
 import React from "react";
-import "./SkillSection.css";
-import Title from "./Title";
 import SkillContainer from "./SkillContainer";
+import { SectionTitle } from "../../../components";
+import "./SkillSection.css";
 
 const SkillSection = ({ data,handleGoBack }) => {
   return (
     <div className="skill_section">
-      <Title title={data.title} handleGoBack={handleGoBack}/>
+      <SectionTitle title={"Skills"} handleGoBack={handleGoBack}/>
       {data.sections.map((skills, index) => (
         <SkillContainer data={skills} key={index} />
       ))}

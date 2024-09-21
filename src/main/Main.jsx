@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Intro from "./intro/Intro";
 import { mainData } from "../data";
-import Section from "./sections/Section";
-import "./Main.css";
 import { Loading } from "../components";
+import AllSection from "./sections/all-section/AllSection";
 import SkillSection from "./sections/skill-section/SkillSection";
 import ProjectSection from "./sections/project-section/ProjectSection";
 import ExperienceSection from "./sections/experience-section/ExperienceSection";
 import InterestSection from "./sections/interest-section/InterestSection";
+import "./Main.css";
 
 const Main = () => {
   const [showSection, setShowSection] = useState({
@@ -38,14 +38,15 @@ const Main = () => {
     }, [1500]);
   };
   const handleExploreAllClick = (explore) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     setLoader(true);
     setTimeout(() => {
       changeSection(explore);
       setLoader(false);
     }, 1500);
   };
-
   const handleGoBack = (backTo) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     setLoader(true);
     setTimeout(() => {
       changeSection(backTo);
@@ -67,15 +68,26 @@ const Main = () => {
             />
           )}
           {showSection.all && (
-            <Section
+            <AllSection
               data={mainData.section}
               handleExploreAllClick={handleExploreAllClick}
             />
           )}
-          {showSection.skills && <SkillSection data={mainData.skillSection} handleGoBack={handleGoBack}/>}
-          {showSection.projects && <ProjectSection />}
-          {showSection.experience && <ExperienceSection />}
-          {showSection.interests && <InterestSection />}
+          {showSection.skills && (
+            <SkillSection
+              data={mainData.skillSection}
+              handleGoBack={handleGoBack}
+            />
+          )}
+          {showSection.projects && (
+            <ProjectSection handleGoBack={handleGoBack} />
+          )}
+          {showSection.experience && (
+            <ExperienceSection handleGoBack={handleGoBack} />
+          )}
+          {showSection.interests && (
+            <InterestSection handleGoBack={handleGoBack} />
+          )}
         </>
       )}
     </div>

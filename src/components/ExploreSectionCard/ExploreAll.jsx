@@ -6,7 +6,7 @@ const ExploreAll = ({ explore }) => {
       <button
         className="explore_all_btn"
       >
-        <p>Explore All {explore}</p>
+        <p className="explore_all_text">Explore All {explore}</p>
       </button>
     </div>
   );

@@ -4,14 +4,18 @@ import Avatar from "./Avatar";
 import CardDescription from "./CardDescription";
 import ExploreAll from "./ExploreAll";
 
-const SectionCard = ({ card, index, className, handleExploreAllClick }) => {
+export const ExploreSectionCard = ({
+  card,
+  className,
+  handleExploreAllClick,
+}) => {
   return (
     <div
       className={`section_card ${className}`}
       onClick={() => handleExploreAllClick(card.title.toLowerCase())}
     >
       <CardTitle title={card.title} />
-      <Avatar avatar={card.avatar} index={index} />
+      <Avatar avatar={card.avatar} icon={card?.icon} />
       <CardDescription description={card.description} />
       <ExploreAll
         explore={card.title}
@@ -20,5 +24,3 @@ const SectionCard = ({ card, index, className, handleExploreAllClick }) => {
     </div>
   );
 };
-
-export default React.memo(SectionCard);

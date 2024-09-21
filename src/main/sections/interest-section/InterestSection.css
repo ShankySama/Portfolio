@@ -1,0 +1,23 @@
+.interest_section {
+  padding: 0px 40px;
+}
+.interest_title_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.interest_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.interest_card {
+  border: 2px solid #ffffff91;
+  border-radius: 11px;
+  padding: 10px;
+  backdrop-filter: blur(20px);
+}
+.interest_card_body {
+  padding: 10px;
+  background-color: #ffffff91;
+  border-radius: 11px;
+}

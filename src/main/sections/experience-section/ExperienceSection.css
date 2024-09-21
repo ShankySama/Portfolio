@@ -1,0 +1,30 @@
+.experience_section {
+  padding: 0px 40px;
+}
+.experience_card {
+  border: 2px solid #ffffff91;
+  border-radius: 11px;
+  padding: 10px;
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  transition: all 1s ease;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+.experience_card_body {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  gap: 10px;
+}
+.company_name{
+  margin: 0;
+}
+.responsibility_heading{
+  text-align: center;
+}
+.responsibility_section {
+  padding: 10px;
+  background-color: #ffffff91;
+  border-radius: 11px;
+}

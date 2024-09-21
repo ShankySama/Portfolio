@@ -1,16 +1,15 @@
 import React from "react";
-import SectionCard from "./SectionCard";
+import { ExploreSectionCard } from "../../../components";
 import "./Section.css";
 
-const Section = ({ data, handleExploreAllClick }) => {
+const AllSection = ({ data, handleExploreAllClick }) => {
   return (
     <div className="section">
       <div className="cards_section">
         {data.cards.map((card, index) => (
-          <SectionCard
-            index={index}
-            card={card}
+          <ExploreSectionCard
             key={index}
+            card={card}
             className={`card_${index + 1}`}
             handleExploreAllClick={handleExploreAllClick}
           />
@@ -20,4 +19,4 @@ const Section = ({ data, handleExploreAllClick }) => {
   );
 };
 
-export default React.memo(Section);
+export default React.memo(AllSection);

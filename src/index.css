@@ -48,7 +48,7 @@ code {
   }
 }
 /* Common CSS */
-.go_back{
+.go_back {
   border-radius: 11px;
   background: #ffffff91;
   border: none;
@@ -56,27 +56,38 @@ code {
   padding: 10px;
   cursor: pointer;
 }
-.go_back_text{
+.go_back_text {
   margin: 0;
   color: #424242;
+  font-weight: bolder;
 }
 /* Dark Mode Css */
 .dark_mode {
   background-color: #212121;
-  color: #d7d7d7;
-  .explore_all_btn {
-    color: #424242;
+  color: #d7d7d7d4;
+  .light_mode_img {
+    display: none;
   }
-}
-.dark_mode .light_mode_img {
-  display: none;
-}
-.dark_mode .explore_more_btn {
-  border-color: #424242;
-}
-.dark_mode .section_card {
-  border-color: #424242;
-}
-.dark_mode .card {
-  border-color: #424242;
+  .explore_more_btn {
+    border-color: #424242;
+  }
+  .section_card {
+    border-color: #424242;
+    .explore_all_btn {
+      background-color: #0000006e;
+      color: #d7d7d7d4;
+    }
+  }
+  .card {
+    border-color: #424242;
+  }
+  .go_back,
+  .myrole_section,
+  .technology_section,
+  .team_section,.responsibility_section,.interest_card_body {
+    background-color: #0000006e;
+  }
+  .go_back_text {
+    color: #d7d7d7d4;
+  }
 }

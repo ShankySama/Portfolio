@@ -20,6 +20,7 @@
   cursor: pointer;
   padding-left: 15px;
   padding-right: 15px;
+  backdrop-filter: blur(20px);
 }
 .explore_me_text{
   font-weight: 900;

@@ -1,3 +1,7 @@
+import skills_avatar from "../../assets/images/skills_avatar.png";
+import projects_avatar from "../../assets/images/projects_avatar.png";
+import experience_avatar from "../../assets/images/experience_avatar.png";
+import interest_avatar from "../../assets/images/interest_avatar.png";
 import react_icon from "../../assets/images/react_icon.png";
 import next_icon from "../../assets/images/next_icon.png";
 import node_icon from "../../assets/images/node_icon.png";
@@ -44,6 +48,7 @@ export const mainData = {
     cards: [
       {
         title: "Skills",
+        icon: skills_avatar,
         avatar: {
           name: "skills_avatar.png",
           alt: "skills_avatar-logo",
@@ -55,6 +60,7 @@ export const mainData = {
       },
       {
         title: "Projects",
+        icon: projects_avatar,
         avatar: {
           name: "projects_avatar.png",
           alt: "projects_avatar-logo",
@@ -66,6 +72,7 @@ export const mainData = {
       },
       {
         title: "Experience",
+        icon: experience_avatar,
         avatar: {
           name: "experience_avatar.png",
           alt: "experience_avatar-logo",
@@ -77,6 +84,7 @@ export const mainData = {
       },
       {
         title: "Interests",
+        icon: interest_avatar,
         avatar: {
           name: "interest_avatar.png",
           alt: "interest_avatar-logo",

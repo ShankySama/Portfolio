@@ -1,13 +1,13 @@
 import React from "react";
-import Title from "./Title";
-import "./ProjectSection.css"
 import ProjectCard from "./ProjectCard";
+import { SectionTitle } from "../../../components";
+import "./ProjectSection.css";
 
-const ProjectSection = () => {
+const ProjectSection = ({ handleGoBack }) => {
   return (
     <div className="project_section">
-      <Title />
-      <ProjectCard/>
+      <SectionTitle title={"Projects"} handleGoBack={handleGoBack}/>
+      <ProjectCard />
     </div>
   );
 };

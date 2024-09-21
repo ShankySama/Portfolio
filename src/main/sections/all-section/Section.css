@@ -58,9 +58,9 @@
   background-color: #ffffff91;
   cursor: pointer;
   color: #424242;
-  p {
-    padding: 10px;
-    margin: 0;
-    font-weight: 800;
-  }
+}
+.explore_all_text {
+  padding: 10px;
+  margin: 0;
+  font-weight: bolder;
 }

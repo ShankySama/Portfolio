@@ -67,6 +67,15 @@
   .project_tech_section{
     grid-template-columns: 1fr !important;
   }
+  .experience_card:hover{
+    transform: scale(1) !important;
+  }
+  .experience_card_body{
+    grid-template-columns: 1fr !important;
+  }
+  .interest_cards{
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* Tablets */
@@ -131,5 +140,14 @@
         transform: scale(1);
       }
     }
+  }
+  .experience_card:hover{
+    transform: scale(1) !important;
+  }
+  .experience_card_body{
+    grid-template-columns: 1fr !important;
+  }
+  .interest_cards{
+    grid-template-columns: 1fr 1fr !important;
   }
 }
