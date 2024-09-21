@@ -13,12 +13,13 @@ export const ExploreSectionCard = ({
     <div
       className={`section_card ${className}`}
       onClick={() => handleExploreAllClick(card.title.toLowerCase())}
+      title={card?.title}
     >
-      <CardTitle title={card.title} />
-      <Avatar avatar={card.avatar} icon={card?.icon} />
-      <CardDescription description={card.description} />
+      <CardTitle title={card?.title} />
+      <Avatar avatar={card?.avatar} icon={card?.icon} />
+      <CardDescription description={card?.description} />
       <ExploreAll
-        explore={card.title}
+        explore={card?.title}
         handleExploreAllClick={handleExploreAllClick}
       />
     </div>

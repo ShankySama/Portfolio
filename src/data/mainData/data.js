@@ -186,4 +186,97 @@ export const mainData = {
       },
     ],
   },
+  projectSection: {
+    title: "Projects",
+    projects: [
+      {
+        title: "Tricera",
+        description:
+          "Tricera Print is a boutique offering premium bespoke printing, mounting, and framing services. Specializing in fine art printing, scanning, and art reproduction, it caters to both individual artists and businesses. The platform integrates dropshipping and fulfillment services, providing a seamless end-to-end solution for creatives looking to showcase their work with professional quality. Whether you're an artist or a business, Tricera Print delivers tailored solutions for your artistic and printing needs",
+        rolesAndResp: {
+          title: "My Role and Responsibilities",
+          rolesAndResp: [
+            "Built and optimized cart and order modules.",
+            "Implemented real-time product visualization.",
+            "Performed continuous bug fixes.",
+          ],
+        },
+        techUsed: {
+          title: "Technology Used",
+          techs: {
+            frontend: {
+              title: "Frontend techs",
+              techs: ["React Js", "Wordpress"],
+            },
+            backend: { title: "Backend techs", techs: ["Node Js", "MongoDB"] },
+          },
+        },
+        team: {
+          title: "Team",
+          members: [
+            { memberType: "Manger", number: 1 },
+            { memberType: "Team Lead", number: 1 },
+            { memberType: "Frontend", number: 2 },
+            { memberType: "Backend", number: 2 },
+            { memberType: "QA", number: 1 },
+          ],
+        },
+        projectLink: "https://app.triceraprint.com/",
+      },
+    ],
+  },
+  experienceSection: {
+    title: "Experiences",
+    experiences: [
+      {
+        companyName: "Orion eSolutions",
+        description:
+          "Orion eSolutions is a technology consulting company providing custom software development, DevOps, cloud management, and cybersecurity services. They help businesses with digital transformation, building scalable IT infrastructure, and managing cloud platforms like AWS, Azure, and Google Cloud. Orion eSolutions also offers expertise in enterprise solutions, microservices architecture, and web and mobile app development, with a focus on improving operational efficiency and security for businesses across various industries.",
+        startData: "August 2021",
+        endData: "Present",
+        location: "Punjab, India",
+        responsibilities: {
+          title: "Responsibilities",
+          resp: [
+            "Contributed to React and Next js projects through problem-solving, teamwork, and mentoring of junior developers.",
+            "Analyzed solutions and coding fixes for software problems.",
+            "Liaised with QA testers to perform testing meeting various parameters.",
+            "Created successful websites that met requirements for objectives such as load speed and design.",
+            "Supported continuous improvement by investigating alternatives and technologies for review.",
+          ],
+        },
+        link: "https://orionesolutions.com/",
+      },
+    ],
+  },
+  interestSection: {
+    title: "Interests",
+    interests: [
+      {
+        title: "Coding Challenges",
+        description:
+          "I actively engage in coding challenges on platforms like LeetCode and HackerRank to sharpen my problem-solving skills and algorithmic thinking. These challenges range from basic to advanced levels, covering topics such as data structures, algorithms, and dynamic programming. I also take on hypothetical scenarios designed for junior developers, which help me simulate real-world problem-solving and improve my coding efficiency.",
+      },
+      {
+        title: "Exploring New Javascript Techs",
+        description:
+          "I have a strong passion for exploring the latest JavaScript frameworks and libraries to stay ahead in the rapidly evolving tech landscape. I actively research and experiment with emerging technologies such as Next.js, React Native, and Vite, among others. This exploration allows me to understand their unique features, advantages, and best practices.",
+      },
+      {
+        title: "Manga and Anime",
+        description:
+          "As an avid fan of manga and anime, I enjoy immersing myself in diverse narratives and art styles that reflect a wide range of cultures and themes. From action-packed shonen series to thought-provoking slice-of-life stories, I appreciate the creativity and depth these mediums offer. My love for manga and anime inspires my artistic sensibilities and storytelling approach, influencing my work in design and development.",
+      },
+      {
+        title: "Console Gaming",
+        description:
+          "I am passionate about console gaming, appreciating the immersive experiences and rich storytelling that games offer. From epic adventures in open-world environments to competitive multiplayer matches, I enjoy exploring various genres and styles. Gaming not only provides entertainment but also enhances my strategic thinking and teamwork skills. I love engaging with communities, discussing game mechanics, and sharing experiences with fellow gamers. ",
+      },
+      {
+        title: "Bike Riding",
+        description:
+          "I am passionate about motorcycle riding, relishing the sense of freedom and adventure that comes with hitting the open road. Whether cruising along scenic highways or tackling challenging trails, I enjoy the thrill of the ride and the connection it fosters with the environment. Motorcycle riding not only fuels my love for exploration but also enhances my focus and decision-making skills.",
+      },
+    ],
+  },
 };

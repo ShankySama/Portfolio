@@ -84,7 +84,10 @@ code {
   .go_back,
   .myrole_section,
   .technology_section,
-  .team_section,.responsibility_section,.interest_card_body {
+  .team_section,
+  .responsibility_section,
+  .interest_card_body,
+  .interest_card {
     background-color: #0000006e;
   }
   .go_back_text {

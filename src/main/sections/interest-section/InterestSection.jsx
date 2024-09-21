@@ -3,12 +3,14 @@ import InterestCard from "./InterestCard";
 import { SectionTitle } from "../../../components";
 import "./InterestSection.css";
 
-const InterestSection = ({ handleGoBack }) => {
+const InterestSection = ({ data, handleGoBack }) => {
   return (
     <div className="interest_section">
-      <SectionTitle title={"Interests"} handleGoBack={handleGoBack}/>
+      <SectionTitle title={data?.title} handleGoBack={handleGoBack} />
       <div className="interest_cards">
-      <InterestCard />
+        {data?.interests.map((interest, index) => (
+          <InterestCard interest={interest} key={index} />
+        ))}
       </div>
     </div>
   );

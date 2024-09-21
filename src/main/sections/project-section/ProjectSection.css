@@ -8,12 +8,13 @@
 .project_card {
   border: 2px solid #ffffff91;
   border-radius: 11px;
-  padding: 10px;
+  padding: 15px 10px;
   backdrop-filter: blur(20px);
   cursor: pointer;
   transition: all 1s ease;
   &:hover {
     transform: scale(1.02);
+    backdrop-filter: none;
   }
 }
 .project_card_body {
@@ -29,27 +30,31 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
-.myrole_section {
-  padding: 5px;
-  background-color: #ffffff91;
-  border-radius: 11px;
-}
-.technology_section {
-  padding: 5px;
-  background-color: #ffffff91;
-  border-radius: 11px;
-}
+.myrole_section,
+.technology_section,
 .team_section {
   padding: 5px;
   background-color: #ffffff91;
   border-radius: 11px;
 }
+.project_sub_card {
+  padding:10px;
+}
 .subHeading {
   margin: 0;
-  text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+}
+.techHeading {
+  margin: 0;
+}
+.tech_type {
+  margin-bottom: 8px;
 }
 .item {
-  text-align: center;
-  list-style-type: none;
+  list-style-type: disc;
+}
+.team_members {
+  display: flex;
+  justify-content: space-between;
 }

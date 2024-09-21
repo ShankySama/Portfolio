@@ -80,13 +80,13 @@ const Main = () => {
             />
           )}
           {showSection.projects && (
-            <ProjectSection handleGoBack={handleGoBack} />
+            <ProjectSection data={mainData.projectSection} handleGoBack={handleGoBack} />
           )}
           {showSection.experience && (
-            <ExperienceSection handleGoBack={handleGoBack} />
+            <ExperienceSection data={mainData.experienceSection} handleGoBack={handleGoBack} />
           )}
           {showSection.interests && (
-            <InterestSection handleGoBack={handleGoBack} />
+            <InterestSection data={mainData.interestSection} handleGoBack={handleGoBack} />
           )}
         </>
       )}

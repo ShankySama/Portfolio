@@ -3,11 +3,13 @@ import "./ExperienceSection.css";
 import ExperienceCard from "./ExperienceCard";
 import { SectionTitle } from "../../../components";
 
-const ExperienceSection = ({ handleGoBack }) => {
+const ExperienceSection = ({ data, handleGoBack }) => {
   return (
     <div className="experience_section">
-      <SectionTitle title={"Experiences"} handleGoBack={handleGoBack}/>
-      <ExperienceCard />
+      <SectionTitle title={data?.title} handleGoBack={handleGoBack} />
+      {data.experiences.map((experience, index) => (
+        <ExperienceCard experience={experience} key={index} />
+      ))}
     </div>
   );
 };

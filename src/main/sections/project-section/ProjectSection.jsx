@@ -3,11 +3,13 @@ import ProjectCard from "./ProjectCard";
 import { SectionTitle } from "../../../components";
 import "./ProjectSection.css";
 
-const ProjectSection = ({ handleGoBack }) => {
+const ProjectSection = ({ data, handleGoBack }) => {
   return (
     <div className="project_section">
-      <SectionTitle title={"Projects"} handleGoBack={handleGoBack}/>
-      <ProjectCard />
+      <SectionTitle title={data?.title} handleGoBack={handleGoBack} />
+      {data?.projects?.map((project, index) => (
+        <ProjectCard project={project} key={index} />
+      ))}
     </div>
   );
 };
