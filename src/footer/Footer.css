@@ -1,12 +1,17 @@
 .footer_container {
+  padding: 40px;
+}
+.footer_title{
+  text-align: center;
+}
+.footer_container_cards {
   z-index: 2;
-  padding-bottom: 40px;
   display: grid;
-  grid-template-columns: 150px 150px 150px;
+  grid-template-columns: 200px 200px 200px 200px 200px;
   column-gap: 80px;
   justify-content: center;
   gap: 40px;
-  padding-top: 40px;
+  margin-top: 2rem;
 }
 .card_link {
   text-decoration: none;

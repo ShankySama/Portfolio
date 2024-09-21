@@ -6,9 +6,12 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer_container">
-      {footerData.profiles.map((profile, index) => (
-        <Card profile={profile} key={index} />
-      ))}
+      <h1 className="footer_title">{footerData.title}</h1>
+      <div className="footer_container_cards">
+        {footerData.profiles.map((profile, index) => (
+          <Card profile={profile} key={index} />
+        ))}
+      </div>
     </div>
   );
 };

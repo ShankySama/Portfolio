@@ -28,8 +28,8 @@
   .main_container{
     margin-bottom:0 !important;
   }
-  .footer_container {
-    grid-template-columns: 0.7fr !important;
+  .footer_container_cards {
+    grid-template-columns: .8fr !important;
     .card {
       &:hover {
         transform: scale(1);
@@ -75,6 +75,9 @@
   }
   .interest_cards{
     grid-template-columns: 1fr !important;
+  }
+  .section_title_container{
+    justify-content: center;
   }
 }
 
@@ -133,8 +136,8 @@
   .project_card:hover{
     transform: scale(1) !important;
   }
-  .footer_container {
-    grid-template-columns: 0.7fr !important;
+  .footer_container_cards {
+    grid-template-columns: .7fr .7fr !important;
     .card {
       &:hover {
         transform: scale(1);

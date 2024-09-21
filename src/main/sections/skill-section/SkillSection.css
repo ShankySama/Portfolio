@@ -4,11 +4,6 @@
 .skill_container {
   margin-bottom: 3rem;
 }
-.skill_title_container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
 .skill_icon_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));

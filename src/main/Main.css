@@ -2,6 +2,10 @@
   margin-top: 140px;
   position: relative;
   z-index: 2;
-  margin-bottom: 4rem;
   transition: 1s;
+}
+.section_title_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }

@@ -1,11 +1,6 @@
 .interest_section {
   padding: 0px 40px;
 }
-.interest_title_container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
 .interest_cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

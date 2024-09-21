@@ -5,11 +5,6 @@
 .project_section {
   padding: 0px 40px;
 }
-.project_title_container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
 .project_card {
   border: 2px solid #ffffff91;
   border-radius: 11px;
