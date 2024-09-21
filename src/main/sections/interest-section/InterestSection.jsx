@@ -1,6 +1,6 @@
 import React from "react";
 import InterestCard from "./InterestCard";
-import { SectionTitle } from "../../../components";
+import { GoBackBtn, SectionTitle } from "../../../components";
 import "./InterestSection.css";
 
 const InterestSection = ({ data, handleGoBack }) => {
@@ -11,6 +11,9 @@ const InterestSection = ({ data, handleGoBack }) => {
         {data?.interests.map((interest, index) => (
           <InterestCard interest={interest} key={index} />
         ))}
+      </div>
+      <div className="mobile_go_back_container">
+        <GoBackBtn handleGoBack={handleGoBack} />
       </div>
     </div>
   );

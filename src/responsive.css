@@ -85,6 +85,9 @@
   .subHeading{
     text-align: center;
   }
+  .mobile_go_back_container{
+    display: grid !important;
+  }
 }
 
 /* Tablets */

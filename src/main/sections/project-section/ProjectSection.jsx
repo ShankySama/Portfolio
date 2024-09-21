@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { SectionTitle } from "../../../components";
+import { GoBackBtn, SectionTitle } from "../../../components";
 import "./ProjectSection.css";
 
 const ProjectSection = ({ data, handleGoBack }) => {
@@ -10,6 +10,9 @@ const ProjectSection = ({ data, handleGoBack }) => {
       {data?.projects?.map((project, index) => (
         <ProjectCard project={project} key={index} />
       ))}
+      <div className="mobile_go_back_container">
+        <GoBackBtn handleGoBack={handleGoBack} />
+      </div>
     </div>
   );
 };

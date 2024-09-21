@@ -1,7 +1,7 @@
 import React from "react";
 import "./ExperienceSection.css";
 import ExperienceCard from "./ExperienceCard";
-import { SectionTitle } from "../../../components";
+import { GoBackBtn, SectionTitle } from "../../../components";
 
 const ExperienceSection = ({ data, handleGoBack }) => {
   return (
@@ -10,6 +10,9 @@ const ExperienceSection = ({ data, handleGoBack }) => {
       {data.experiences.map((experience, index) => (
         <ExperienceCard experience={experience} key={index} />
       ))}
+      <div className="mobile_go_back_container">
+        <GoBackBtn handleGoBack={handleGoBack} />
+      </div>
     </div>
   );
 };

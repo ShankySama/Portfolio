@@ -1,5 +1,5 @@
 import React from "react";
-import GoBackBtn from "./GoBackBtn";
+import { GoBackBtn } from "./GoBackBtn";
 
 export const SectionTitle = ({ title, handleGoBack }) => {
   return (

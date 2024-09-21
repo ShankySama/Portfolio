@@ -47,6 +47,7 @@ code {
     transform: translateY(0px);
   }
 }
+
 /* Common CSS */
 .go_back {
   border-radius: 11px;
@@ -61,6 +62,11 @@ code {
   color: #424242;
   font-weight: bolder;
 }
+.mobile_go_back_container{
+  display: none;
+  margin-top: 1rem;
+}
+
 /* Dark Mode Css */
 .dark_mode {
   background-color: #212121;
@@ -95,5 +101,8 @@ code {
   }
   .skill_name{
     color: #000000d4;
+  }
+  .skill_icon{
+    border:3px solid #000000e3
   }
 }
