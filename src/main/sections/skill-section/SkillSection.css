@@ -15,6 +15,8 @@
   padding: 8px;
   border-radius: 11px;
 }
+
 .skill_name {
   margin: 0;
+  font-weight: bolder;
 }

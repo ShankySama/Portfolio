@@ -277,6 +277,11 @@ export const mainData = {
         description:
           "I am passionate about motorcycle riding, relishing the sense of freedom and adventure that comes with hitting the open road. Whether cruising along scenic highways or tackling challenging trails, I enjoy the thrill of the ride and the connection it fosters with the environment. Motorcycle riding not only fuels my love for exploration but also enhances my focus and decision-making skills.",
       },
+      {
+        title: "Metal Guitarist",
+        description:
+          "I immerse myself in the powerful world of heavy riffs, intricate solos, and dynamic rhythms. I enjoy crafting original compositions and honing my skills through rigorous practice and experimentation.",
+      },
     ],
   },
 };

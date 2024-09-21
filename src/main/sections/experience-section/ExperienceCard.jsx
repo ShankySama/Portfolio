@@ -7,7 +7,7 @@ const ExperienceCard = ({ experience }) => {
       href={experience?.link}
       target="_blank"
       rel="noreferrer"
-      title={experience.title}
+      title={experience?.companyName}
     >
       <div className="experience_card">
         <div className="experience_card_body">

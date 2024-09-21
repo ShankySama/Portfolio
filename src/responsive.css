@@ -42,6 +42,7 @@
   .section_card {
     &:hover {
       transform: none !important;
+      backdrop-filter: blur(20px) !important;
       .section_cards_title {
         display: flex !important;
       }
@@ -63,12 +64,14 @@
   }
   .project_card:hover{
     transform: scale(1) !important;
+    backdrop-filter: blur(20px) !important;
   }
   .project_tech_section{
     grid-template-columns: 1fr !important;
   }
   .experience_card:hover{
     transform: scale(1) !important;
+    backdrop-filter: blur(20px) !important;
   }
   .experience_card_body{
     grid-template-columns: 1fr !important;
@@ -78,6 +81,9 @@
   }
   .section_title_container{
     justify-content: center;
+  }
+  .subHeading{
+    text-align: center;
   }
 }
 
@@ -121,6 +127,7 @@
   .section_card {
     &:hover {
       transform: none !important;
+      backdrop-filter: blur(20px) !important;
       .section_cards_title {
         display: flex !important;
       }
@@ -135,6 +142,7 @@
   }
   .project_card:hover{
     transform: scale(1) !important;
+    backdrop-filter: blur(20px) !important;
   }
   .footer_container_cards {
     grid-template-columns: .7fr .7fr !important;
@@ -146,6 +154,7 @@
   }
   .experience_card:hover{
     transform: scale(1) !important;
+    backdrop-filter: blur(20px) !important;
   }
   .experience_card_body{
     grid-template-columns: 1fr !important;
