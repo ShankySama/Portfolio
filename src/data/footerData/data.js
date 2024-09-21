@@ -37,7 +37,7 @@ export const footerData = {
     },
     {
       type: "+91 8968861229",
-      value: "",
+      value: "tel:+918968861229",
       icon: phone_icon,
       size: 50,
       alt: "phone-icon",
