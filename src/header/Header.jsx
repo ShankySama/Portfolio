@@ -4,7 +4,6 @@ import Title from "./Title";
 import Subtitle from "./Subtitle";
 import DarkModeBtn from "./DarkModeBtn";
 import { headerData } from "../data";
-
 import "./Header.css";
 
 const Header = () => {

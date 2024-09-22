@@ -62,9 +62,43 @@ code {
   color: #424242;
   font-weight: bolder;
 }
-.mobile_go_back_container{
+.mobile_go_back_container {
   display: none;
   margin-top: 1rem;
+}
+.s {
+  height: 50px;
+  width: 50px;
+}
+.m {
+  height: 100px;
+  width: 100px;
+}
+.l {
+  height: 150px;
+  width: 150px;
+}
+.s,
+.m,
+.l {
+  animation: skeleton 1.6s linear infinite alternate;
+}
+.skeleton_circle {
+  border-radius: 50%;
+}
+.skeleton_square {
+  border-radius: 11px;
+}
+.skeleton_rectangle {
+  border-radius: 11px;
+}
+@keyframes skeleton {
+  0% {
+    background-color: hsl(0deg 0% 85.49% / 40%);
+  }
+  100% {
+    background-color: hsl(0deg 0% 34.31% / 43%);
+  }
 }
 
 /* Dark Mode Css */
@@ -99,10 +133,10 @@ code {
   .go_back_text {
     color: #d7d7d7d4;
   }
-  .skill_name{
+  .skill_name {
     color: #000000d4;
   }
-  .skill_icon{
-    border:3px solid #000000e3
+  .skill_icon {
+    border: 3px solid #000000e3;
   }
 }

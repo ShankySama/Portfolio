@@ -9,7 +9,7 @@
     text-align: center;
   }
   .header_avatar_container{
-    display: block !important;
+    justify-content: center;
   }
   .header_avatar_container span{
     display: none;
@@ -98,7 +98,7 @@
     text-align: center;
   }
   .header_avatar_container{
-    display: block !important;
+    justify-content: center;
   }
   .header_avatar_container span{
     display: none;

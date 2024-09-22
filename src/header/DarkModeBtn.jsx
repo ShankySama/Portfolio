@@ -27,9 +27,9 @@ const DarkModeBtn = ({ darkModeImg, lightModeImg }) => {
   return (
     <button onClick={handleModeChange} className="mode_btn">
       {darkMode ? (
-        <img src={darkModeBulb} {...darkModeImg} alt={darkModeImg.alt} />
+        <img src={darkModeBulb} {...darkModeImg} alt={darkModeImg?.alt} />
       ) : (
-        <img src={lightModeBulb} {...lightModeImg} alt={lightModeImg.alt} />
+        <img src={lightModeBulb} {...lightModeImg} alt={lightModeImg?.alt} />
       )}
     </button>
   );
