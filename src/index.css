@@ -66,40 +66,6 @@ code {
   display: none;
   margin-top: 1rem;
 }
-.s {
-  height: 50px;
-  width: 50px;
-}
-.m {
-  height: 100px;
-  width: 100px;
-}
-.l {
-  height: 150px;
-  width: 150px;
-}
-.s,
-.m,
-.l {
-  animation: skeleton 1.6s linear infinite alternate;
-}
-.skeleton_circle {
-  border-radius: 50%;
-}
-.skeleton_square {
-  border-radius: 11px;
-}
-.skeleton_rectangle {
-  border-radius: 11px;
-}
-@keyframes skeleton {
-  0% {
-    background-color: hsl(0deg 0% 85.49% / 40%);
-  }
-  100% {
-    background-color: hsl(0deg 0% 34.31% / 43%);
-  }
-}
 
 /* Dark Mode Css */
 .dark_mode {

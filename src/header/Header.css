@@ -11,6 +11,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
+  min-height: 120px;
 }
 .logo_container {
   display: flex;
