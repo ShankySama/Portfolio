@@ -1,6 +1,9 @@
 .footer_container {
   padding: 40px;
 }
+.footer_title_container{
+  text-align: center;
+}
 .footer_title{
   text-align: center;
 }
