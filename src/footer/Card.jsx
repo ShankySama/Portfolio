@@ -1,25 +1,27 @@
 import React from "react";
+import { getFooterIcon } from "./Footer.helper";
 
 const Card = ({ profile }) => {
   let anchorAttributes = {};
-  if (profile.type === "Gmail") {
+  if (profile?.type === "Gmail") {
     anchorAttributes = { href: "mailTo:" + profile.value };
   } else {
     anchorAttributes = {
-      href: profile.value,
+      href: profile?.value,
       target: "_blank",
       rel: "noreferrer",
     };
   }
+  
   return (
     <a className="card_link" {...anchorAttributes}>
       <div className="card">
         <div>
           <img
-            src={profile?.icon}
+            src={getFooterIcon(profile?.icon)}
             alt={profile?.alt}
-            height={profile.size}
-            width={profile.size}
+            height={profile?.size}
+            width={profile?.size}
           />
         </div>
         <div>

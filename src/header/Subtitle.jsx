@@ -9,4 +9,3 @@ const Subtitle = ({ subTitle }) => {
 };
 
 export default React.memo(Subtitle);
-
