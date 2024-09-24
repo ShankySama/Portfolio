@@ -72,6 +72,9 @@ code {
 .mb-2{
   margin-bottom: 10px;
 }
+.t-center{
+  text-align: center;
+}
 
 /* Dark Mode Css */
 .dark_mode {
@@ -95,7 +98,8 @@ code {
   }
   .go_back,
   .myrole_section,
-  .technology_section,
+  .technologies,
+  .teams,
   .team_section,
   .responsibility_section,
   .interest_card_body,

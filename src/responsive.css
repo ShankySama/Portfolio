@@ -11,6 +11,10 @@
   .header_avatar_container{
     justify-content: center;
   }
+  .header_avatar{
+    height: 70px !important;
+    width: 70px !important;
+  }
   .header_avatar_container span{
     display: none;
   }
@@ -96,6 +100,10 @@
   .logo_container {
     display: block !important;
     text-align: center;
+  }
+  .header_avatar{
+    height: 70px !important;
+    width: 70px !important;
   }
   .header_avatar_container{
     justify-content: center;

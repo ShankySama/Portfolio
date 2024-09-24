@@ -11,11 +11,7 @@
   padding: 15px 10px;
   backdrop-filter: blur(20px);
   cursor: pointer;
-  transition: all 1s ease;
-  &:hover {
-    transform: scale(1.02);
-    backdrop-filter: none;
-  }
+  margin-bottom: 1rem;
 }
 .project_card_body {
   display: grid;
@@ -27,18 +23,24 @@
 }
 .project_tech_section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.technology_section {
+  display: grid;
   gap: 10px;
 }
 .myrole_section,
-.technology_section,
-.team_section {
+.team_section,
+.technologies,
+.teams {
   padding: 5px;
   background-color: #ffffff91;
   border-radius: 11px;
 }
 .project_sub_card {
-  padding:10px;
+  padding: 10px;
+  padding-top: 0px;
 }
 .subHeading {
   margin: 0;

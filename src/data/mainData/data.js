@@ -190,11 +190,47 @@ export const mainData = {
     title: "Projects",
     projects: [
       {
+        title: "The Boston Consulting Group, Inc.",
+        description:
+          "Boston Consulting Group (BCG) is a global management consulting firm that helps companies solve their most complex challenges, focusing on strategy, digital transformation, and innovation. BCG is known for its expertise in data analytics, blockchain, and emerging technologies. They assist organizations with growth strategies, operations, and technology solutions to drive sustainable success​.",
+        rolesAndResp: {
+          title: "My Responsibilities",
+          rolesAndResp: [
+            "Implement secure, scalable SSO with Okta.",
+            "Develop reusable, modular components to enhance functionality.",
+            "Build scalable components using the MVC architecture.",
+            "Enable in-page and Experience Editor editing for better content management.",
+          ],
+        },
+        techUsed: {
+          title: "Technology Used",
+          techs: {
+            frontend: {
+              title: "Frontend Techs",
+              techs: ["Next Js", "Vercel"],
+            },
+            backend: { title: "Backend Techs", techs: ["Sitecore XMC"] },
+          },
+        },
+        team: {
+          title: "Team",
+          members: [
+            { memberType: "Solution architecture", number: 2 },
+            { memberType: "Manager", number: 1 },
+            { memberType: "Team Lead", number: 2 },
+            { memberType: "Frontend", number: 8 },
+            { memberType: "Backend", number: 9 },
+            { memberType: "QA", number: 5 },
+          ],
+        },
+        projectLink: "https://microsites.inside.bcg.com/",
+      },
+      {
         title: "Tricera",
         description:
           "Tricera Print is a boutique offering premium bespoke printing, mounting, and framing services. Specializing in fine art printing, scanning, and art reproduction, it caters to both individual artists and businesses. The platform integrates dropshipping and fulfillment services, providing a seamless end-to-end solution for creatives looking to showcase their work with professional quality. Whether you're an artist or a business, Tricera Print delivers tailored solutions for your artistic and printing needs",
         rolesAndResp: {
-          title: "My Role and Responsibilities",
+          title: "My Responsibilities",
           rolesAndResp: [
             "Built and optimized cart and order modules.",
             "Implemented real-time product visualization.",
@@ -205,16 +241,16 @@ export const mainData = {
           title: "Technology Used",
           techs: {
             frontend: {
-              title: "Frontend techs",
+              title: "Frontend Techs",
               techs: ["React Js", "Wordpress"],
             },
-            backend: { title: "Backend techs", techs: ["Node Js", "MongoDB"] },
+            backend: { title: "Backend Techs", techs: ["Node Js"] },
           },
         },
         team: {
           title: "Team",
           members: [
-            { memberType: "Manger", number: 1 },
+            { memberType: "Manager", number: 1 },
             { memberType: "Team Lead", number: 1 },
             { memberType: "Frontend", number: 2 },
             { memberType: "Backend", number: 2 },
@@ -222,6 +258,41 @@ export const mainData = {
           ],
         },
         projectLink: "https://app.triceraprint.com/",
+      },
+      {
+        title: "Italki",
+        description:
+          "Italki is an online language learning platform that connects students with language tutors from around the world. Users can choose from a vast selection of over 150 languages, including popular options like Spanish, French, and Mandarin, as well as less common languages such as Basque and Tsonga. The platform allows for flexible learning through one-on-one lessons, where students can book trial classes or regular sessions with tutors of their choice.",
+        rolesAndResp: {
+          title: "My Responsibilities",
+          rolesAndResp: [
+            "Integrated video communication features using Twilio to enhance user interaction.",
+            "Designed and implemented the main landing page to provide an engaging user experience.",
+            "Developed a module allowing users to easily search and connect with teachers.",
+            "Designed and implemented user authentication features for secure access.",
+          ],
+        },
+        techUsed: {
+          title: "Technology Used",
+          techs: {
+            frontend: {
+              title: "Frontend Techs",
+              techs: ["React Js"],
+            },
+            backend: { title: "Backend Techs", techs: ["PHP"] },
+          },
+        },
+        team: {
+          title: "Team",
+          members: [
+            { memberType: "Manager", number: 1 },
+            { memberType: "Team Lead", number: 1 },
+            { memberType: "Frontend", number: 2 },
+            { memberType: "Backend", number: 2 },
+            { memberType: "QA", number: 3 },
+          ],
+        },
+        projectLink: "https://www.italki.com/",
       },
     ],
   },
