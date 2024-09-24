@@ -12,6 +12,7 @@
   border-radius: 11px;
   padding: 10px;
   cursor: pointer;
+  color: inherit;
   p{
     margin:0
   }
