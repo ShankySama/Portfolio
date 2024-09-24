@@ -2,13 +2,6 @@ import React from "react";
 
 const ExperienceCard = ({ experience }) => {
   return (
-    <a
-      className="experience_link"
-      href={experience?.link}
-      target="_blank"
-      rel="noreferrer"
-      title={experience?.companyName}
-    >
       <div className="experience_card">
         <div className="experience_card_body">
           <div className="company_section">
@@ -37,7 +30,6 @@ const ExperienceCard = ({ experience }) => {
           </div>
         </div>
       </div>
-    </a>
   );
 };
 

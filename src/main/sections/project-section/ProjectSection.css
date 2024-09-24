@@ -2,6 +2,20 @@
   text-decoration: none;
   color: inherit;
 }
+.project_link_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ffffff91;
+  border: none;
+  border-radius: 11px;
+  padding: 10px;
+  cursor: pointer;
+  p{
+    margin:0
+  }
+}
 .project_section {
   padding: 0px 40px;
 }
@@ -10,8 +24,8 @@
   border-radius: 11px;
   padding: 15px 10px;
   backdrop-filter: blur(20px);
-  cursor: pointer;
   margin-bottom: 1rem;
+  cursor: default;
 }
 .project_card_body {
   display: grid;

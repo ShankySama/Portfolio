@@ -73,6 +73,9 @@
   .project_tech_section{
     grid-template-columns: 1fr !important;
   }
+  .project_link_btn{
+    width: 100%;
+  }
   .experience_card:hover{
     transform: scale(1) !important;
     backdrop-filter: blur(20px) !important;

@@ -6,12 +6,7 @@
   border-radius: 11px;
   padding: 10px;
   backdrop-filter: blur(20px);
-  cursor: pointer;
   transition: all 1s ease;
-  &:hover {
-    transform: scale(1.02);
-    backdrop-filter: none;
-  }
 }
 .experience_card_body {
   display: grid;
@@ -32,9 +27,5 @@
 }
 .responsibilities{
   padding: 10px;
-}
-.experience_link{
-  color: inherit;
-  text-decoration: none;
 }
 

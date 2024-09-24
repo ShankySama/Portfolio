@@ -35,6 +35,7 @@ import jira_icon from "../../assets/images/jira_icon.png";
 import trello_icon from "../../assets/images/trello_icon.png";
 import slack_icon from "../../assets/images/slack_icon.png";
 import msteams_icon from "../../assets/images/msteams_icon.png";
+import link_icon from "../../assets/images/link_icon.png";
 
 export const mainData = {
   intro: {
@@ -223,7 +224,11 @@ export const mainData = {
             { memberType: "QA", number: 5 },
           ],
         },
-        projectLink: "https://microsites.inside.bcg.com/",
+        projectLink: {
+          title: "Project Link",
+          link: "https://microsites.inside.bcg.com/",
+          linkIcon: link_icon,
+        },
       },
       {
         title: "Tricera",
@@ -257,7 +262,11 @@ export const mainData = {
             { memberType: "QA", number: 1 },
           ],
         },
-        projectLink: "https://app.triceraprint.com/",
+        projectLink: {
+          title: "Project Link",
+          link: "https://app.triceraprint.com/",
+          linkIcon: link_icon,
+        },
       },
       {
         title: "Italki",
@@ -292,7 +301,11 @@ export const mainData = {
             { memberType: "QA", number: 3 },
           ],
         },
-        projectLink: "https://www.italki.com/",
+        projectLink: {
+          title: "Project Link",
+          link: "https://www.italki.com/",
+          linkIcon: link_icon,
+        },
       },
     ],
   },
