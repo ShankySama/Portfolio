@@ -5,8 +5,8 @@ import Subtitle from "./Subtitle";
 import DarkModeBtn from "./DarkModeBtn";
 import { getData } from "../commonFunctions";
 import { API_CONFIG } from "../utils";
-import "./Header.css";
 import Skeleton from "react-loading-skeleton";
+import "./Header.css";
 
 const Header = () => {
   const [headerData, setHeaderData] = useState(null);
@@ -31,14 +31,17 @@ const Header = () => {
       <div className="logo_container">
         <div className="avatar_container">
           {loading ? (
-            <Skeleton height={100} width={100} circle className="mb-1"/>
+            <Skeleton height={100} width={100} circle className="mb-1" />
           ) : (
             <Avatar logo={headerData?.logo} greeting={headerData?.greeting} />
           )}
         </div>
         <div className="title_container">
           {loading ? (
-            <Skeleton height={20} width={150} count={2} className="mb-1"/>
+            <>
+              <Skeleton height={20} width={150} className="mb-1" />
+              <Skeleton height={10} width={100} />
+            </>
           ) : (
             <>
               <Title title={headerData?.title} />
