@@ -1,5 +1,4 @@
 import React from "react";
-import { getFooterIcon } from "./Footer.helper";
 
 const Card = ({ profile }) => {
   let anchorAttributes = {};
@@ -18,7 +17,7 @@ const Card = ({ profile }) => {
       <div className="card">
         <div>
           <img
-            src={getFooterIcon(profile?.icon)}
+            src={profile?.icon}
             alt={profile?.alt}
             height={profile?.size}
             width={profile?.size}

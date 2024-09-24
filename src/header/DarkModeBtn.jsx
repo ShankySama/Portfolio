@@ -1,35 +1,38 @@
 import React, { useState, useEffect } from "react";
-import darkModeBulb from "../assets/images/dark_mode_bulb.png";
-import lightModeBulb from "../assets/images/light_mode_bulb.png";
-import switchOnAudio from "../assets/audios/switch-on.m4a";
 
-const DarkModeBtn = ({ darkModeImg, lightModeImg }) => {
-  const switchClickAudio = new Audio(switchOnAudio);
-  const [darkMode, setDarkMode] = useState(() => {
-    const savedMode = localStorage.getItem('darkMode');
-    return savedMode === 'true';
+const DarkModeBtn = ({
+  darkModeIcon,
+  lightModeIcon,
+  darkMode,
+  lightMode,
+  switchAudio,
+}) => {
+  const switchClickAudio = new Audio(switchAudio);
+  const [darkModeOn, setDarkModeOn] = useState(() => {
+    const savedMode = localStorage.getItem("darkMode");
+    return savedMode === "true";
   });
 
   const handleModeChange = () => {
     switchClickAudio.play();
-    setDarkMode((prev) => {
+    setDarkModeOn((prev) => {
       const newMode = !prev;
       document.body.classList.toggle("dark_mode", newMode);
-      localStorage.setItem('darkMode', newMode);
+      localStorage.setItem("darkMode", newMode);
       return newMode;
     });
   };
 
   useEffect(() => {
-    document.body.classList.toggle("dark_mode", darkMode);
-  }, [darkMode]);
+    document.body.classList.toggle("dark_mode", darkModeOn);
+  }, [darkModeOn]);
 
   return (
     <button onClick={handleModeChange} className="mode_btn">
-      {darkMode ? (
-        <img src={darkModeBulb} {...darkModeImg} alt={darkModeImg?.alt} />
+      {darkModeOn ? (
+        <img src={darkModeIcon} {...darkMode} alt={darkMode?.alt} />
       ) : (
-        <img src={lightModeBulb} {...lightModeImg} alt={lightModeImg?.alt} />
+        <img src={lightModeIcon} {...lightMode} alt={lightMode?.alt} />
       )}
     </button>
   );
