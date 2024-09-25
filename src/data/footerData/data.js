@@ -8,7 +8,7 @@ export const footerData = {
   profiles: [
     {
       type: "Gmail",
-      value: "shanky8968861229@gmail.com",
+      value: "prdeep.rawat1999@gmail.com",
       icon: gmail_icon,
       size: 50,
       alt: "gmail-icon",
