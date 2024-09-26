@@ -6,6 +6,8 @@
 }
 .footer_title{
   text-align: center;
+  transition: .5s;
+  text-transform: capitalize;
 }
 .footer_container_cards {
   z-index: 2;

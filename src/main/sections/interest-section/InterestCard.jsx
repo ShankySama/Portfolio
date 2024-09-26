@@ -5,7 +5,7 @@ const InterestCard = ({interest}) => {
     <div className="interest_card">
       <h2>{interest?.title}</h2>
       <div>
-        <p>
+        <p className="interest_description">
          {interest?.description}
         </p>
       </div>

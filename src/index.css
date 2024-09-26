@@ -60,6 +60,7 @@ code {
   margin: 0;
   color: #424242;
   font-weight: bolder;
+  transition: .5s;
 }
 .mobile_go_back_container {
   display: none;
@@ -83,7 +84,8 @@ code {
     display: none;
   }
   .explore_more_btn {
-    border-color: #424242;
+    border-color: transparent;
+    background-color: #0000006e;
   }
   .section_card {
     border-color: #424242;
@@ -93,7 +95,8 @@ code {
     }
   }
   .card {
-    border-color: #424242;
+    border-color: transparent;
+    background-color: #0000006e;
   }
   .go_back,
   .myrole_section,

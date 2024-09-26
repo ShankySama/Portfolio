@@ -35,9 +35,11 @@
 }
 .title {
   margin: 0;
+  text-transform: capitalize;
 }
 .sub_title {
   margin: 0;
+  text-transform: capitalize;
 }
 .mode_btn {
   background: transparent;

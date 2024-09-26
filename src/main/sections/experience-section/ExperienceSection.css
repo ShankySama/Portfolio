@@ -6,7 +6,6 @@
   border-radius: 11px;
   padding: 10px;
   backdrop-filter: blur(20px);
-  transition: all 1s ease;
 }
 .experience_card_body {
   display: grid;

@@ -13,4 +13,7 @@
   background-color: #ffffff91;
   cursor: default;
 }
+.interest_description{
+  transition: .5s;
+}
 
