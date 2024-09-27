@@ -12,7 +12,7 @@
 .subtitle {
   margin: 0;
 }
-.explore_more_btn{
+.explore_more_btn {
   background-color: transparent;
   border: 2px solid #ffffff91;
   border-radius: 11px;
@@ -22,7 +22,9 @@
   padding-right: 15px;
   backdrop-filter: blur(20px);
 }
-.explore_me_text{
+.explore_me_text {
   font-weight: 900;
   font-family: monospace;
 }
+
+

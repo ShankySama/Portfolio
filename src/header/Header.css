@@ -29,6 +29,7 @@
   bottom:-12px;
   opacity: 0;
   transition: all 1s ease;
+  display: none;
 }
 .title_container {
   padding-left: 10px;
