@@ -1,6 +1,11 @@
 .section {
-  padding: 40px;
+  /* padding: 40px; */
   transition: opacity 0.5s ease-in-out;
+  display: grid;
+  justify-content: center;
+  position: relative;
+  opacity: 1;
+  z-index: 9;
 }
 .cards_section {
   display: grid;
@@ -66,12 +71,13 @@
   font-weight: bolder;
 }
 
-.preLoader {
+.all_sections {
   display: grid;
+  /* grid-template-rows: 12rem 12rem 12rem ;
+  grid-template-columns: 12rem 12rem 12rem; */
   grid-template-rows: 1fr 1fr 1fr ;
-  grid-template-columns: 1fr .5fr 1fr ;
-  gap: 40px;
-  /* animation: move 15s infinite linear; */
+  grid-template-columns: 1fr 1fr 1fr;
+  animation: move 15s infinite linear;
   /* min-height: 70vh; */
 }
 .item {
@@ -80,19 +86,21 @@
   align-items: center;
 }
 .item_1 {
-  grid-area: 1/2/1/4;
+  grid-area: 1/2/1/3;
 }
 .item_2 {
-  grid-area: 2/4/2/4;
+  grid-area: 2/3/2/4;
 }
 .item_3 {
-  grid-area: 3/2/4/4;
+  grid-area: 3/2/3/3;
 }
 .item_4 {
   grid-area: 2/1/2/2;
 }
 .item_5 {
-  grid-area: 2/2/2/4;
+  grid-area: 2/2/2/3;
+  align-items: center;
+  justify-content: center;
 }
 .text {
   animation: moveNeg 15s infinite linear;
@@ -108,6 +116,10 @@
   backdrop-filter: blur(20px);
   font-weight: 900;
   cursor: pointer;
+}
+.all_section_avatar{
+  animation: moveNeg 15s infinite linear;
+  transform-origin: center;
 }
 @keyframes moveNeg {
   100% {

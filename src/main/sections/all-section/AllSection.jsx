@@ -1,29 +1,31 @@
 import React from "react";
-import { ExploreSectionCard } from "../../../components";
 import "./Section.css";
 import src from "../../../assets/images/skills_avatar.png";
 
 const AllSection = ({ data, handleExploreAllClick }) => {
   return (
     <div className="section">
-      {/* <div className="preLoader">
-        <div className="item item_1">
-          <p className="text">Skills</p>
-        </div>
-        <div className="item item_2">
-          <p className="text">Projects</p>
-        </div>
-        <div className="item item_3">
-          <p className="text">Experience</p>
-        </div>
-        <div className="item item_4">
-          <p className="text">Interests</p>
-        </div>
+      <div className="all_sections">
+        {data.cards.map((card, index) => (
+          <div
+            className={`item item_${index + 1}`}
+            key={index}
+            onClick={() => handleExploreAllClick(card.title.toLowerCase())}
+          >
+            <p className="text">{card?.title}</p>
+          </div>
+        ))}
         <div className="item item_5">
-          <img src={src} height={300} width={300}/>
+          <img
+            className="all_section_avatar"
+            src={src}
+            height={200}
+            width={200}
+            alt="avatar-icon"
+          />
         </div>
-      </div> */}
-      <div className="cards_section">
+      </div>
+      {/* <div className="cards_section">
         {data.cards.map((card, index) => (
           <ExploreSectionCard
             key={index}
@@ -32,7 +34,7 @@ const AllSection = ({ data, handleExploreAllClick }) => {
             handleExploreAllClick={handleExploreAllClick}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

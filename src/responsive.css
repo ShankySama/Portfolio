@@ -18,9 +18,6 @@
   .header_avatar_container span{
     display: none;
   }
-  .main_container{
-    margin-top: 220px !important;
-  }
   .intro_container {
     display: grid !important;
     width: auto !important;
@@ -31,6 +28,7 @@
   }
   .main_container{
     margin-bottom:0 !important;
+    margin-top: 180px !important;
   }
   .footer_container_cards {
     grid-template-columns: .8fr !important;
@@ -94,6 +92,14 @@
   }
   .mobile_go_back_container{
     display: grid !important;
+  }
+  .all_sections{
+    grid-template-rows: 1fr 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+  .all_section_avatar{
+    height: 150px !important;
+    width: 150px !important;
   }
 }
 

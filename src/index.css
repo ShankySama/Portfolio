@@ -106,7 +106,7 @@ code {
   .responsibility_section,
   .interest_card_body,
   .interest_card,
-  .project_link_btn {
+  .project_link_btn,.all_sections p {
     background-color: #0000006e;
     p{
       color: #d7d7d7d4;;

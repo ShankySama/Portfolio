@@ -23,6 +23,8 @@
   color: inherit;
 }
 .card {
+  position: relative;
+  z-index: 9;
   cursor: pointer;
   padding: 10px;
   border: 2px solid #ffffff91;
