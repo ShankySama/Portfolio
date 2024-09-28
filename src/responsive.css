@@ -101,6 +101,13 @@
     height: 150px !important;
     width: 150px !important;
   }
+  .project_ss_section{
+    grid-template-columns: 1fr !important;
+    img{
+      height: 100% !important;
+      width: 100% !important;
+    }
+  }
 }
 
 /* Tablets */
@@ -181,5 +188,8 @@
   }
   .interest_cards{
     grid-template-columns: 1fr 1fr !important;
+  }
+  .project_ss_section{
+    grid-template-columns: .2fr .2fr !important;
   }
 }

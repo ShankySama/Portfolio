@@ -25,6 +25,15 @@ const ProjectCard = ({ project }) => {
               />
             </button>
           </a>
+          <div className="project_ss_section">
+            {
+              project?.projectSS.map((ss,index)=>(
+                <div className="project_ss_item" key={index}>
+                  <img src={ss} alt="project-image" height={200} width={200}/>
+                </div>
+              ))
+            }
+          </div>
         </div>
         <div className="project_tech_section">
           <div className="myrole_section">

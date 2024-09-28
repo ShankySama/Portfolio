@@ -13,6 +13,7 @@
   padding: 10px;
   cursor: pointer;
   color: inherit;
+  margin-bottom: 5px;
   p{
     margin:0
   }
@@ -74,4 +75,14 @@
 .team_members {
   display: flex;
   justify-content: space-between;
+}
+.project_ss_section{
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  gap: 10px;
+}
+.project_ss_item{
+  padding: 8px;
+  border: 2px solid #ffffff91;
+  border-radius: 11px;
 }

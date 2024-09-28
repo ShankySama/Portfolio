@@ -36,6 +36,15 @@ import trello_icon from "../../assets/images/trello_icon.png";
 import slack_icon from "../../assets/images/slack_icon.png";
 import msteams_icon from "../../assets/images/msteams_icon.png";
 import link_icon from "../../assets/images/link_icon.png";
+import bcg_ss1 from "../../assets/images/bcg_project_ss_1.png";
+import bcg_ss2 from "../../assets/images/bcg_project_ss_2.png";
+import bcg_ss3 from "../../assets/images/bcg_project_ss_3.png";
+import tricera_ss1 from "../../assets/images/tricera_project_ss_1.png";
+import tricera_ss2 from "../../assets/images/tricera_project_ss_2.png";
+import tricera_ss3 from "../../assets/images/tricera_project_ss_3.png";
+import italki_ss1 from "../../assets/images/itaki_project_ss_1.png";
+import italki_ss2 from "../../assets/images/itaki_project_ss_2.png";
+import italki_ss3 from "../../assets/images/itaki_project_ss_3.png";
 
 export const mainData = {
   intro: {
@@ -229,6 +238,9 @@ export const mainData = {
           link: "https://microsites.inside.bcg.com/",
           linkIcon: link_icon,
         },
+        projectSS:[
+          bcg_ss1,bcg_ss2,bcg_ss3
+        ]
       },
       {
         title: "Tricera",
@@ -267,6 +279,9 @@ export const mainData = {
           link: "https://app.triceraprint.com/",
           linkIcon: link_icon,
         },
+        projectSS:[
+          tricera_ss1,tricera_ss2,tricera_ss3
+        ]
       },
       {
         title: "Italki",
@@ -306,6 +321,9 @@ export const mainData = {
           link: "https://www.italki.com/",
           linkIcon: link_icon,
         },
+        projectSS:[
+          italki_ss1,italki_ss2,italki_ss3
+        ]
       },
     ],
   },
