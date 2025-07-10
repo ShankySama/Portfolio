@@ -29,7 +29,7 @@ function App() {
     setTimeout(() => {
       changeSection("all");
       setLoader(false);
-    }, [1500]);
+    }, [1000]);
   };
   const handleExploreAllClick = (explore) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -37,7 +37,7 @@ function App() {
     setTimeout(() => {
       changeSection(explore);
       setLoader(false);
-    }, 1500);
+    }, 1000);
   };
   const handleGoBack = (backTo) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -45,7 +45,7 @@ function App() {
     setTimeout(() => {
       changeSection(backTo);
       setLoader(false);
-    }, [1500]);
+    }, [1000]);
   };
   return (
     <div>

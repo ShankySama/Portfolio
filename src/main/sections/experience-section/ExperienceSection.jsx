@@ -8,7 +8,7 @@ const ExperienceSection = ({ data, handleGoBack }) => {
     <div className="experience_section">
       <SectionTitle title={data?.title} handleGoBack={handleGoBack} />
       {data.experiences.map((experience, index) => (
-        <ExperienceCard experience={experience} key={index} />
+        <ExperienceCard experience={experience} key={index} index={index} />
       ))}
       <div className="mobile_go_back_container">
         <GoBackBtn handleGoBack={handleGoBack} />

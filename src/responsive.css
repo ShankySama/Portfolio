@@ -43,19 +43,10 @@
   }
   .section_card {
     &:hover {
-      transform: none !important;
       backdrop-filter: blur(20px) !important;
       .section_cards_title {
         display: flex !important;
       }
-    }
-    img{
-      height: 100px !important;
-      width: 100px !important;
-    }
-    .avatar_container img {
-      height: 100px;
-      width: 100px;
     }
   }
   .explore_more_btn{
@@ -153,14 +144,9 @@
   }
   .section_card {
     &:hover {
-      transform: none !important;
       backdrop-filter: blur(20px) !important;
       .section_cards_title {
         display: flex !important;
-      }
-      img{
-        height: 120px !important;
-        width: 120px !important;
       }
     }
   }

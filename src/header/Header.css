@@ -4,7 +4,7 @@
   transition: 1s;
   margin-bottom: 1rem;
   position: fixed;
-  z-index: 99;
+  z-index: 100 !important;
   top: 0;
   padding:10px 20px;
   width: 100vw;

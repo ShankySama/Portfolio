@@ -200,16 +200,16 @@ export const mainData = {
     title: "Projects",
     projects: [
       {
-        title: "The Boston Consulting Group, Inc.",
+        title: "Italki",
         description:
-          "Boston Consulting Group (BCG) is a global management consulting firm that helps companies solve their most complex challenges, focusing on strategy, digital transformation, and innovation. BCG is known for its expertise in data analytics, blockchain, and emerging technologies. They assist organizations with growth strategies, operations, and technology solutions to drive sustainable success​.",
+          "Italki is an online language learning platform that connects students with language tutors from around the world. Users can choose from a vast selection of over 150 languages, including popular options like Spanish, French, and Mandarin, as well as less common languages such as Basque and Tsonga. The platform allows for flexible learning through one-on-one lessons, where students can book trial classes or regular sessions with tutors of their choice.",
         rolesAndResp: {
           title: "My Responsibilities",
           rolesAndResp: [
-            "Implement secure, scalable SSO with Okta.",
-            "Develop reusable, modular components to enhance functionality.",
-            "Build scalable components using the MVC architecture.",
-            "Enable in-page and Experience Editor editing for better content management.",
+            "Integrated video communication features using Twilio to enhance user interaction.",
+            "Designed and implemented the main landing page to provide an engaging user experience.",
+            "Developed a module allowing users to easily search and connect with teachers.",
+            "Designed and implemented user authentication features for secure access.",
           ],
         },
         techUsed: {
@@ -217,30 +217,27 @@ export const mainData = {
           techs: {
             frontend: {
               title: "Frontend Techs",
-              techs: ["Next Js", "Vercel"],
+              techs: ["React Js"],
             },
-            backend: { title: "Backend Techs", techs: ["Sitecore XMC"] },
+            backend: { title: "Backend Techs", techs: ["PHP"] },
           },
         },
         team: {
           title: "Team",
           members: [
-            { memberType: "Solution architecture", number: 2 },
             { memberType: "Manager", number: 1 },
-            { memberType: "Team Lead", number: 2 },
-            { memberType: "Frontend", number: 8 },
-            { memberType: "Backend", number: 9 },
-            { memberType: "QA", number: 5 },
+            { memberType: "Team Lead", number: 1 },
+            { memberType: "Frontend", number: 2 },
+            { memberType: "Backend", number: 2 },
+            { memberType: "QA", number: 3 },
           ],
         },
         projectLink: {
           title: "Project Link",
-          link: "https://microsites.inside.bcg.com/",
+          link: "https://www.italki.com/",
           linkIcon: link_icon,
         },
-        projectSS:[
-          bcg_ss1,bcg_ss2,bcg_ss3
-        ]
+        projectSS: [italki_ss1, italki_ss2, italki_ss3],
       },
       {
         title: "Tricera",
@@ -279,21 +276,19 @@ export const mainData = {
           link: "https://app.triceraprint.com/",
           linkIcon: link_icon,
         },
-        projectSS:[
-          tricera_ss1,tricera_ss2,tricera_ss3
-        ]
+        projectSS: [tricera_ss1, tricera_ss2, tricera_ss3],
       },
       {
-        title: "Italki",
+        title: "The Boston Consulting Group, Inc.",
         description:
-          "Italki is an online language learning platform that connects students with language tutors from around the world. Users can choose from a vast selection of over 150 languages, including popular options like Spanish, French, and Mandarin, as well as less common languages such as Basque and Tsonga. The platform allows for flexible learning through one-on-one lessons, where students can book trial classes or regular sessions with tutors of their choice.",
+          "Boston Consulting Group (BCG) is a global management consulting firm that helps companies solve their most complex challenges, focusing on strategy, digital transformation, and innovation. BCG is known for its expertise in data analytics, blockchain, and emerging technologies. They assist organizations with growth strategies, operations, and technology solutions to drive sustainable success​.",
         rolesAndResp: {
           title: "My Responsibilities",
           rolesAndResp: [
-            "Integrated video communication features using Twilio to enhance user interaction.",
-            "Designed and implemented the main landing page to provide an engaging user experience.",
-            "Developed a module allowing users to easily search and connect with teachers.",
-            "Designed and implemented user authentication features for secure access.",
+            "Implement secure, scalable SSO with Okta.",
+            "Develop reusable, modular components to enhance functionality.",
+            "Build scalable components using the MVC architecture.",
+            "Enable in-page and Experience Editor editing for better content management.",
           ],
         },
         techUsed: {
@@ -301,29 +296,28 @@ export const mainData = {
           techs: {
             frontend: {
               title: "Frontend Techs",
-              techs: ["React Js"],
+              techs: ["Next Js", "Vercel"],
             },
-            backend: { title: "Backend Techs", techs: ["PHP"] },
+            backend: { title: "Backend Techs", techs: ["Sitecore XMC"] },
           },
         },
         team: {
           title: "Team",
           members: [
+            { memberType: "Solution architecture", number: 2 },
             { memberType: "Manager", number: 1 },
-            { memberType: "Team Lead", number: 1 },
-            { memberType: "Frontend", number: 2 },
-            { memberType: "Backend", number: 2 },
-            { memberType: "QA", number: 3 },
+            { memberType: "Team Lead", number: 2 },
+            { memberType: "Frontend", number: 8 },
+            { memberType: "Backend", number: 9 },
+            { memberType: "QA", number: 5 },
           ],
         },
         projectLink: {
           title: "Project Link",
-          link: "https://www.italki.com/",
+          link: "https://microsites.inside.bcg.com/",
           linkIcon: link_icon,
         },
-        projectSS:[
-          italki_ss1,italki_ss2,italki_ss3
-        ]
+        projectSS: [bcg_ss1, bcg_ss2, bcg_ss3],
       },
     ],
   },
@@ -364,26 +358,26 @@ export const mainData = {
         description:
           "I have a strong passion for exploring the latest JavaScript frameworks and libraries to stay ahead in the rapidly evolving tech landscape. I actively research and experiment with emerging technologies such as Next.js, React Native, and Vite, among others. This exploration allows me to understand their unique features, advantages, and best practices.",
       },
-      {
-        title: "Manga and Anime",
-        description:
-          "As an avid fan of manga and anime, I enjoy immersing myself in diverse narratives and art styles that reflect a wide range of cultures and themes. From action-packed shonen series to thought-provoking slice-of-life stories, I appreciate the creativity and depth these mediums offer. My love for manga and anime inspires my artistic sensibilities and storytelling approach, influencing my work in design and development.",
-      },
-      {
-        title: "Console Gaming",
-        description:
-          "I am passionate about console gaming, appreciating the immersive experiences and rich storytelling that games offer. From epic adventures in open-world environments to competitive multiplayer matches, I enjoy exploring various genres and styles. Gaming not only provides entertainment but also enhances my strategic thinking and teamwork skills. I love engaging with communities, discussing game mechanics, and sharing experiences with fellow gamers. ",
-      },
-      {
-        title: "Bike Riding",
-        description:
-          "I am passionate about motorcycle riding, relishing the sense of freedom and adventure that comes with hitting the open road. Whether cruising along scenic highways or tackling challenging trails, I enjoy the thrill of the ride and the connection it fosters with the environment. Motorcycle riding not only fuels my love for exploration but also enhances my focus and decision-making skills.",
-      },
-      {
-        title: "Metal Guitarist",
-        description:
-          "I immerse myself in the powerful world of heavy riffs, intricate solos, and dynamic rhythms. I enjoy crafting original compositions and honing my skills through rigorous practice and experimentation.",
-      },
+      // {
+      //   title: "Manga and Anime",
+      //   description:
+      //     "As an avid fan of manga and anime, I enjoy immersing myself in diverse narratives and art styles that reflect a wide range of cultures and themes. From action-packed shonen series to thought-provoking slice-of-life stories, I appreciate the creativity and depth these mediums offer. My love for manga and anime inspires my artistic sensibilities and storytelling approach, influencing my work in design and development.",
+      // },
+      // {
+      //   title: "Console Gaming",
+      //   description:
+      //     "I am passionate about console gaming, appreciating the immersive experiences and rich storytelling that games offer. From epic adventures in open-world environments to competitive multiplayer matches, I enjoy exploring various genres and styles. Gaming not only provides entertainment but also enhances my strategic thinking and teamwork skills. I love engaging with communities, discussing game mechanics, and sharing experiences with fellow gamers. ",
+      // },
+      // {
+      //   title: "Bike Riding",
+      //   description:
+      //     "I am passionate about motorcycle riding, relishing the sense of freedom and adventure that comes with hitting the open road. Whether cruising along scenic highways or tackling challenging trails, I enjoy the thrill of the ride and the connection it fosters with the environment. Motorcycle riding not only fuels my love for exploration but also enhances my focus and decision-making skills.",
+      // },
+      // {
+      //   title: "Metal Guitarist",
+      //   description:
+      //     "I immerse myself in the powerful world of heavy riffs, intricate solos, and dynamic rhythms. I enjoy crafting original compositions and honing my skills through rigorous practice and experimentation.",
+      // },
     ],
   },
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion, AnimatePresence } from "motion/react";
 import Intro from "./intro/Intro";
 import { mainData } from "../data";
 import { Loading } from "../components";
@@ -22,45 +23,93 @@ const Main = ({
       {loader ? (
         <Loading />
       ) : (
-        <>
+        <AnimatePresence mode="wait">
           {showSection.intro && (
-            <Intro
-              data={mainData.intro}
-              changeSection={changeSection}
-              handleExploreMeClick={handleExploreMeClick}
-            />
+            <motion.div
+              key="intro"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <Intro
+                data={mainData.intro}
+                changeSection={changeSection}
+                handleExploreMeClick={handleExploreMeClick}
+              />
+            </motion.div>
           )}
           {showSection.all && (
-            <AllSection
-              data={mainData.section}
-              handleExploreAllClick={handleExploreAllClick}
-            />
+            <motion.div
+              key="all"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              <AllSection
+                data={mainData.section}
+                handleExploreAllClick={handleExploreAllClick}
+              />
+            </motion.div>
           )}
           {showSection.skills && (
-            <SkillSection
-              data={mainData.skillSection}
-              handleGoBack={handleGoBack}
-            />
+            <motion.div
+              key="skills"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 30 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <SkillSection
+                data={mainData.skillSection}
+                handleGoBack={handleGoBack}
+              />
+            </motion.div>
           )}
           {showSection.projects && (
-            <ProjectSection
-              data={mainData.projectSection}
-              handleGoBack={handleGoBack}
-            />
+            <motion.div
+              key="projects"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 30 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <ProjectSection
+                data={mainData.projectSection}
+                handleGoBack={handleGoBack}
+              />
+            </motion.div>
           )}
           {showSection.experience && (
-            <ExperienceSection
-              data={mainData.experienceSection}
-              handleGoBack={handleGoBack}
-            />
+            <motion.div
+              key="experience"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 30 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <ExperienceSection
+                data={mainData.experienceSection}
+                handleGoBack={handleGoBack}
+              />
+            </motion.div>
           )}
           {showSection.interests && (
-            <InterestSection
-              data={mainData.interestSection}
-              handleGoBack={handleGoBack}
-            />
+            <motion.div
+              key="interests"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 30 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <InterestSection
+                data={mainData.interestSection}
+                handleGoBack={handleGoBack}
+              />
+            </motion.div>
           )}
-        </>
+        </AnimatePresence>
       )}
     </div>
   );

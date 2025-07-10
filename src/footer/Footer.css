@@ -1,16 +1,16 @@
 .footer_container {
   padding: 40px;
+  z-index: 1 !important;
 }
 .footer_title_container{
   text-align: center;
 }
 .footer_title{
   text-align: center;
-  transition: .5s;
   text-transform: capitalize;
 }
 .footer_container_cards {
-  z-index: 2;
+  z-index: 1 !important;
   display: grid;
   grid-template-columns: 200px 200px 200px 200px 200px;
   column-gap: 80px;
@@ -21,10 +21,11 @@
 .card_link {
   text-decoration: none;
   color: inherit;
+  z-index: 1 !important;
 }
 .card {
   position: relative;
-  z-index: 9;
+  z-index: 1 !important;
   cursor: pointer;
   padding: 10px;
   border: 2px solid #ffffff91;
@@ -33,11 +34,7 @@
   align-items: center;
   min-width: 140px;
   justify-content: center;
-  transition: 1s;
   backdrop-filter: blur(20px);
-  &:hover {
-    transform: scale(1.2);
-  }
 }
 .type {
   margin-left: 8px;
