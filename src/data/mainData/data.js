@@ -45,6 +45,8 @@ import tricera_ss3 from "../../assets/images/tricera_project_ss_3.png";
 import italki_ss1 from "../../assets/images/itaki_project_ss_1.png";
 import italki_ss2 from "../../assets/images/itaki_project_ss_2.png";
 import italki_ss3 from "../../assets/images/itaki_project_ss_3.png";
+import orion_logo from "../../assets/images/orion_esolutions_logo.svg";
+import pu_logo from "../../assets/images/pu-logo.png";
 
 export const mainData = {
   intro: {
@@ -326,6 +328,33 @@ export const mainData = {
     experiences: [
       {
         companyName: "Orion eSolutions",
+        organisation: "Orion eSolutions",
+        designation: "Software Engineer",
+        description:
+          "Orion eSolutions is a technology consulting company providing custom software development, DevOps, cloud management, and cybersecurity services. They help businesses with digital transformation, building scalable IT infrastructure, and managing cloud platforms like AWS, Azure, and Google Cloud. Orion eSolutions also offers expertise in enterprise solutions, microservices architecture, and web and mobile app development, with a focus on improving operational efficiency and security for businesses across various industries.",
+        startData: "August 2021",
+        endData: "Present",
+        date: "October 2021 - Present",
+        location: "Punjab, India",
+        responsibilities: {
+          title: "Responsibilities",
+          resp: [
+            "Contributed to React and Next js projects through problem-solving, teamwork, and mentoring of junior developers.",
+            "Analyzed solutions and coding fixes for software problems.",
+            "Liaised with QA testers to perform testing meeting various parameters.",
+            "Created successful websites that met requirements for objectives such as load speed and design.",
+            "Supported continuous improvement by investigating alternatives and technologies for review.",
+          ],
+        },
+        logo:orion_logo,
+        link: "https://orionesolutions.com/",
+        logoSize: 80,
+      },
+      {
+        companyName: "Orion eSolutions",
+        organisation: "Orion eSolutions",
+        designation: "MERN Stack Trainee",
+        date:"August 2021 - October 2021",
         description:
           "Orion eSolutions is a technology consulting company providing custom software development, DevOps, cloud management, and cybersecurity services. They help businesses with digital transformation, building scalable IT infrastructure, and managing cloud platforms like AWS, Azure, and Google Cloud. Orion eSolutions also offers expertise in enterprise solutions, microservices architecture, and web and mobile app development, with a focus on improving operational efficiency and security for businesses across various industries.",
         startData: "August 2021",
@@ -341,8 +370,26 @@ export const mainData = {
             "Supported continuous improvement by investigating alternatives and technologies for review.",
           ],
         },
+        logo:orion_logo,
+        logoSize:80,
         link: "https://orionesolutions.com/",
       },
+      {
+        organisation: "Panjab University",
+        designation: "Post Graduation - Msc IT",
+        date:"2020 - 2022",
+        logo:pu_logo,
+        logoSize:80,
+        link: "https://puchd.ac.in",
+      },
+      {
+        organisation: "Panjab University",
+        designation: "Graduation - BCA",
+        date:"2017 - 2020",
+        logo:pu_logo,
+        logoSize:80,
+        link: "https://puchd.ac.in",
+      }
     ],
   },
   interestSection: {
