@@ -1,0 +1,19 @@
+.resume_bagde {
+  position: fixed;
+  top: 60%;
+  right: 0px;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: right center;
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px 4px 0 0;
+  z-index: 1000;
+  white-space: nowrap;
+  cursor: pointer;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}

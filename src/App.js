@@ -3,6 +3,7 @@ import Header from "./header/Header";
 import Main from "./main/Main";
 import { BodySvg } from "./components";
 import { useState } from "react";
+import ResumeBagde from "./components/ResumeBagde/ResumeBagde";
 
 function App() {
   const [showSection, setShowSection] = useState({
@@ -58,6 +59,7 @@ function App() {
         handleExploreAllClick={handleExploreAllClick}
         handleGoBack={handleGoBack}
       />
+      <ResumeBagde/>
       <Footer />
     </div>
   );
