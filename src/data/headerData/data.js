@@ -12,7 +12,7 @@ export const headerData = {
   },
   greeting: "Hi, How are you ?",
   title: "Pardeep Singh Rawat",
-  subTitle: "MERN Stack Developer",
+  subTitle: "Software Engineer",
   mode: {
     lightMode: {
       height: 40,

@@ -5,6 +5,9 @@ import interest_avatar from "../../assets/images/interest_avatar.png";
 import react_icon from "../../assets/images/react_icon.png";
 import next_icon from "../../assets/images/next_icon.png";
 import node_icon from "../../assets/images/node_icon.png";
+import dotnet_icon from "../../assets/images/dotnet_icon.png";
+import claude_icon from "../../assets/images/claude_icon.webp";
+import csharp_icon from "../../assets/images/csharp_icon.png";
 import redux_icon from "../../assets/images/redux_icon.png";
 import redux_toolkit_icon from "../../assets/images/redux_toolkit_icon.png";
 import js_icon from "../../assets/images/js_icon.png";
@@ -50,10 +53,10 @@ import pu_logo from "../../assets/images/pu-logo.png";
 
 export const mainData = {
   intro: {
-    title: "Hello, I'm a MERN stack Developer!",
-    subTitle: "Bringing Your Web Ideas to Life",
+    title: "Hello, I'm a Software Engineer!",
+    subTitle: "I Build. You Grow.",
     description:
-      "I craft engaging and responsive web experiences using HTML, CSS, and JavaScript. With a focus on modern frameworks, I turn concepts into seamless, interactive interfaces. Check out my work to see how I can help bring your vision to reality.",
+      "I don't just write code — I build experiences that hit different. Fast, sharp, and made to convert. If you've got a vision, I've got the skills to make it real. No fluff, just results.",
     exploreMe: "Click here to explore me",
   },
   section: {
@@ -117,10 +120,12 @@ export const mainData = {
           { name: "React JS", icon: react_icon },
           { name: "Next JS", icon: next_icon },
           { name: "Node JS", icon: node_icon },
+          { name: "Dotnet", icon: dotnet_icon },
           { name: "Redux", icon: redux_icon },
           { name: "Redux-toolkit", icon: redux_toolkit_icon },
           { name: "JavaScript", icon: js_icon },
           { name: "TypeScript", icon: ts_icon },
+          { name: "C#", icon: csharp_icon },
           { name: "HTML5", icon: html_icon },
           { name: "CSS3", icon: css_icon },
           { name: "SASS", icon: sass_icon },
@@ -132,6 +137,10 @@ export const mainData = {
       {
         title: "Coding Tools",
         skills: [
+          {
+            name: "Claude",
+            icon: claude_icon,
+          },
           {
             name: "VS Code",
             icon: vscode_icon,

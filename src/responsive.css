@@ -56,7 +56,7 @@
     grid-template-columns: 1fr !important;
   }
   .project_card:hover{
-    transform: scale(1) !important;
+    transform: none !important;
     backdrop-filter: blur(20px) !important;
   }
   .project_tech_section{
@@ -65,12 +65,53 @@
   .project_link_btn{
     width: 100%;
   }
+  .project_card{
+    padding: 16px !important;
+  }
+  .project_title_row{
+    align-items: flex-start !important;
+  }
+  .project_title{
+    font-size: 22px !important;
+  }
+  .project_card_description{
+    line-height: 1.55 !important;
+  }
   .experience_card:hover{
     transform: scale(1) !important;
     backdrop-filter: blur(20px) !important;
   }
   .experience_card_body{
     grid-template-columns: 1fr !important;
+  }
+  .timeline-container{
+    padding-left: 28px !important;
+  }
+  .timeline-comp{
+    padding-left: 10px !important;
+  }
+  .timeline-card{
+    width: auto !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    padding: 12px !important;
+  }
+  .timeline-card:hover{
+    transform: none !important;
+  }
+  .timeline-dot{
+    left: -27px !important;
+  }
+  .timeline-logo-link{
+    height: 62px !important;
+    width: 62px !important;
+  }
+  .timeline-logo{
+    max-height: 50px !important;
+    max-width: 50px !important;
+  }
+  .timeline-content h3{
+    font-size: 16px !important;
   }
   .interest_cards{
     grid-template-columns: 1fr !important;
@@ -94,10 +135,39 @@
   }
   .project_ss_section{
     grid-template-columns: 1fr !important;
-    img{
-      height: 100% !important;
-      width: 100% !important;
-    }
+  }
+  .project_ss_item img{
+    height: 170px !important;
+  }
+  .skill_bento_grid{
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .skill_container{
+    min-height: auto !important;
+    padding: 16px !important;
+  }
+  .skill_header h2{
+    font-size: 20px !important;
+  }
+  .skill_icon_container{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+  .skill_icon{
+    min-height: 112px !important;
+    padding: 12px 8px !important;
+  }
+  .skill_icon:hover{
+    transform: none !important;
+  }
+  .skill_icon_media{
+    height: 56px !important;
+    width: 56px !important;
+  }
+  .skill_icon_media img{
+    max-height: 40px !important;
+    max-width: 40px !important;
   }
 }
 
@@ -154,8 +224,27 @@
     grid-template-columns: 1fr !important;
   }
   .project_card:hover{
-    transform: scale(1) !important;
+    transform: none !important;
     backdrop-filter: blur(20px) !important;
+  }
+  .project_ss_section{
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .project_ss_item img{
+    height: 150px !important;
+  }
+  .skill_bento_grid{
+    grid-template-columns: 1fr !important;
+  }
+  .skill_icon_container{
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+  .skill_container:first-child .skill_icon_container{
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  .skill_icon:hover{
+    transform: none !important;
   }
   .footer_container_cards {
     grid-template-columns: .7fr .7fr !important;
@@ -172,10 +261,10 @@
   .experience_card_body{
     grid-template-columns: 1fr !important;
   }
+  .timeline-card:hover{
+    transform: none !important;
+  }
   .interest_cards{
     grid-template-columns: 1fr 1fr !important;
-  }
-  .project_ss_section{
-    grid-template-columns: .2fr .2fr !important;
   }
 }

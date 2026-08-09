@@ -7,9 +7,11 @@ const SkillSection = ({ data, handleGoBack }) => {
   return (
     <div className="skill_section">
       <SectionTitle title={"Skills"} handleGoBack={handleGoBack} />
-      {data.sections.map((skills, index) => (
-        <SkillContainer data={skills} key={index} />
-      ))}
+      <div className="skill_bento_grid">
+        {data.sections.map((skills, index) => (
+          <SkillContainer data={skills} index={index} key={index} />
+        ))}
+      </div>
       <div className="mobile_go_back_container">
         <GoBackBtn handleGoBack={handleGoBack} />
       </div>

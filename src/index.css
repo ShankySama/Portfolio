@@ -112,13 +112,110 @@ code {
       color: #d7d7d7d4;;
     }
   }
+  .timeline-container::before {
+    background: linear-gradient(180deg, #ffffff91, #8a8a8a, #424242);
+    box-shadow: 0 0 18px #ffffff2e;
+  }
+  .timeline-dot {
+    background: #8a8a8a;
+    box-shadow: 0 0 0 7px #ffffff1f, 0 0 18px #ffffff2e;
+  }
+  .timeline-card {
+    border-color: #424242;
+    background: #0000006e;
+    box-shadow: 0 14px 30px #00000042;
+  }
+  .timeline-card:hover {
+    background: #0000009e;
+  }
+  .timeline-logo-link {
+    background: #d7d7d7d4;
+  }
+  .timeline-date {
+    background: #d7d7d71f;
+  }
+  .project_card {
+    border-color: #424242;
+    background: linear-gradient(135deg, #0000008f, #00000052);
+    box-shadow: 0 18px 40px #00000052;
+  }
+  .project_card:hover {
+    border-color: #5a5a5a;
+    box-shadow: 0 24px 48px #00000070;
+  }
+  .project_card::before {
+    background: linear-gradient(135deg, #ffffff12, transparent 45%);
+  }
+  .project_card::after {
+    background: linear-gradient(90deg, #d7d7d7d4, #8a8a8a, #424242);
+  }
+  .project_card_description {
+    color: #d7d7d7d4;
+  }
+  .project_index,
+  .team_members span:last-child {
+    background: #d7d7d7d4;
+    color: #212121;
+  }
+  .myrole_section,
+  .technologies,
+  .teams {
+    border-color: #424242;
+    box-shadow: inset 0 0 0 1px #ffffff0f, 0 12px 28px #00000042;
+  }
+  .tech_chip {
+    background: #d7d7d71f;
+    border-color: #d7d7d72e;
+  }
+  .team_members {
+    border-color: #d7d7d721;
+  }
+  .project_ss_item {
+    border-color: #424242;
+    background: #0000006e;
+    box-shadow: 0 12px 26px #00000047;
+  }
+  .project_link_btn {
+    background: #d7d7d7d4;
+    border-color: #d7d7d7d4;
+    color: #212121;
+  }
+  .project_link_btn:hover {
+    background: #ffffff;
+  }
+  .project_link_btn img {
+    filter: none;
+  }
   .go_back_text {
     color: #d7d7d7d4;
   }
-  .skill_name {
-    color: #000000d4;
+  .skill_container {
+    border-color: #424242;
+    background:
+      linear-gradient(135deg, #000000a8, #0000005c),
+      linear-gradient(135deg, var(--skill-accent-soft), transparent 56%);
+    box-shadow: 0 18px 40px #00000052;
+  }
+  .skill_container::after {
+    background: linear-gradient(135deg, var(--skill-accent), transparent);
+    opacity: 0.24;
   }
   .skill_icon {
-    border: 3px solid #000000e3;
+    border-color: #424242;
+    background: #0000006e;
+    backdrop-filter: blur(24px);
+    box-shadow: none;
+  }
+  .skill_icon:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: #0000009e;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  .skill_icon_media {
+    background: transparent;
+    border: none;
+  }
+  .skill_name {
+    color: #d7d7d7d4;
   }
 }

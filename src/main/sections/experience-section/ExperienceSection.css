@@ -27,27 +27,103 @@
 .responsibilities{
   padding: 10px;
 }
-.timeline-container{
-  border-left: 5px solid #ffffff91;
-  border-radius: 5px;
+.timeline-container {
   margin: 2rem auto;
+  padding-left: 34px;
+  position: relative;
 }
-.timeline-comp{
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  bottom: 14px;
+  left: 12px;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffffff, #b8b8b8, #ffffff91);
+  box-shadow: 0 0 18px #ffffff75;
+}
+.timeline-comp {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 10px 10px;
   min-height: 100px;
-  h3{
-    margin-bottom: 4px;
-  }
-  p{
-    margin: 3px;
-  }
+  padding: 10px 0 10px 14px;
+  position: relative;
 }
-.timeline-card{
+.timeline-dot {
+  position: absolute;
+  top: 42px;
+  left: -31px;
+  z-index: 1;
+  height: 20px;
+  width: 20px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: #a8a8a8;
+  box-shadow: 0 0 0 7px #ffffff45, 0 0 18px #a8a8a875;
+}
+.timeline-dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  width: 25px;
+  height: 3px;
+  border-radius: 999px;
+  background: #ffffff91;
+  transform: translateY(-50%);
+}
+.timeline-card {
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-left: 10px;
+  gap: 18px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #ffffffbf;
+  border-radius: 8px;
+  background: #ffffff75;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 14px 30px #00000014;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.timeline-card:hover {
+  transform: translateX(8px);
+  background: #ffffffa8;
+  box-shadow: 0 18px 36px #00000021;
+}
+.timeline-logo-link {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  height: 78px;
+  width: 78px;
+  border-radius: 8px;
+  background: #ffffffd9;
+  box-shadow: inset 0 0 0 1px #ffffff, 0 8px 18px #00000012;
+}
+.timeline-logo {
+  max-height: 64px;
+  max-width: 64px;
+  object-fit: contain;
+}
+.timeline-content h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+.timeline-content p {
+  margin: 3px 0;
+}
+.timeline-organisation {
+  font-weight: 700;
+}
+.timeline-date {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #42424218;
+  font-size: 13px;
+  font-weight: 700;
 }

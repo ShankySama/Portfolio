@@ -8,16 +8,21 @@ const cardVariants = {
 
 const ProjectCard = ({ project, index = 0 }) => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const frontendTechs = project?.techUsed?.techs?.frontend?.techs || [];
+  const backendTechs = project?.techUsed?.techs?.backend?.techs || [];
 
   return (
     <>
-      <motion.div 
+      <motion.article
         className="project_card"
         variants={cardVariants}
       >
         <div className="project_card_body">
-          <div>
-            <h2 className="project_title">{project?.title}</h2>
+          <div className="project_overview">
+            <div className="project_title_row">
+              <span className="project_index">0{index + 1}</span>
+              <h2 className="project_title">{project?.title}</h2>
+            </div>
             <p className="project_card_description">{project?.description}</p>
             <motion.a
               href={project?.projectLink?.link}
@@ -28,22 +33,21 @@ const ProjectCard = ({ project, index = 0 }) => {
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
-              <button className="project_link_btn">
-                <p>
-                  <b>{project?.projectLink?.title}</b>
-                </p>
+              <span className="project_link_btn">
+                <b>{project?.projectLink?.title}</b>
                 <img
                   src={project?.projectLink?.linkIcon}
                   height={20}
                   width={20}
                   alt="link_icon"
                 />
-              </button>
+              </span>
             </motion.a>
             <div className="project_ss_section">
               {
                 project?.projectSS.map((ss, ssIndex) => (
-                  <motion.div 
+                  <motion.button
+                    type="button"
                     className="project_ss_item" 
                     key={ssIndex}
                     layoutId={`project-${index}-image-${ssIndex}`}
@@ -58,7 +62,7 @@ const ProjectCard = ({ project, index = 0 }) => {
                       damping: 30 
                     }}
                     onClick={() => setSelectedImage({ src: ss, index: ssIndex, projectIndex: index })}
-                    style={{ cursor: "pointer" }}
+                    aria-label={`Open ${project?.title} screenshot ${ssIndex + 1}`}
                   >
                     <motion.img 
                       src={ss} 
@@ -68,7 +72,7 @@ const ProjectCard = ({ project, index = 0 }) => {
                       layoutId={`project-${index}-img-${ssIndex}`}
                       style={{ borderRadius: "8px" }}
                     />
-                  </motion.div>
+                  </motion.button>
                 ))
               }
             </div>
@@ -85,13 +89,13 @@ const ProjectCard = ({ project, index = 0 }) => {
               <div className="technology_section">
                 <div className="myrole_section">
                   <h3 className="subHeading">{project?.rolesAndResp?.title}</h3>
-                  <div className="project_sub_card">
+                  <ul className="project_sub_card project_role_list">
                     {project?.rolesAndResp?.rolesAndResp.map((item, index) => (
                       <li key={index} className="item">
                         {item}
                       </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </div>
               <div className="technology_section">
@@ -102,13 +106,25 @@ const ProjectCard = ({ project, index = 0 }) => {
                       <h3 className="techHeading">
                         {project?.techUsed?.techs?.frontend?.title}
                       </h3>
-                      {project?.techUsed?.techs?.frontend?.techs.join(", ")}
+                      <div className="tech_chip_group">
+                        {frontendTechs.map((tech) => (
+                          <span className="tech_chip" key={tech}>
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                     <div className="tech_type">
                       <h3 className="techHeading">
                         {project?.techUsed?.techs?.backend?.title}
                       </h3>
-                      {project?.techUsed?.techs?.backend?.techs.join(", ")}
+                      <div className="tech_chip_group">
+                        {backendTechs.map((tech) => (
+                          <span className="tech_chip" key={tech}>
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -127,7 +143,7 @@ const ProjectCard = ({ project, index = 0 }) => {
             </div>
           </motion.div>
         </div>
-      </motion.div>
+      </motion.article>
 
       {/* Modal */}
       <AnimatePresence>
@@ -168,6 +184,7 @@ const ProjectCard = ({ project, index = 0 }) => {
                 style={{
                   width: "100%",
                   height: "60vh",
+                  objectFit: "contain",
                   borderRadius: "12px",
                   boxShadow: "0 25px 50px rgba(0, 0, 0, 0.5)"
                 }}
